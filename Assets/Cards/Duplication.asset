@@ -1,0 +1,27 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 4d5d9e97f3cd26d478b113588e32d89b, type: 3}
+  m_Name: Duplication
+  m_EditorClassIdentifier: 
+  cardType: 0
+  slowDelay: 0
+  energyCost: 2
+  cardName: Duplication
+  cardText: Give a card in your hand "Clone 1"
+  art: {fileID: 21300000, guid: 49468632747423544bd82f43d5e09a8e, type: 3}
+  attributes: []
+  keywords:
+  - keyword: 24
+    value: 1
+    parameters: Clone 1
+  powers: 
+  discardType: 1

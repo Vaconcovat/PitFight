@@ -1,0 +1,30 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 96aa45097f8bc4841b1b4be950569595, type: 3}
+  m_Name: FireDude
+  m_EditorClassIdentifier: 
+  characterName: Daniel
+  characterDescription: I think he likes fire
+  characterArt: {fileID: 21300000, guid: 6351f08f1e65e6743a9621a7cfb974ac, type: 3}
+  startingCards:
+  - {fileID: 11400000, guid: af66e296b0d63a849bffa7043e1718f5, type: 2}
+  - {fileID: 11400000, guid: af66e296b0d63a849bffa7043e1718f5, type: 2}
+  - {fileID: 11400000, guid: e1059f0d95b48c74f8117a73eb1b32a2, type: 2}
+  - {fileID: 11400000, guid: e1059f0d95b48c74f8117a73eb1b32a2, type: 2}
+  - {fileID: 11400000, guid: c3cc37502bdb97849aa940d170328c73, type: 2}
+  - {fileID: 11400000, guid: 004a2f56018b3444d898ee8106eac4a9, type: 2}
+  - {fileID: 11400000, guid: a8dd3c09773bb50438ad9afbc55e48fa, type: 2}
+  startingHealth: 30
+  startingStrength: 0
+  startingAgility: 0
+  startingStamina: 5
+  startingIntelligence: 5

@@ -1,0 +1,233 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 84a92b25f83d49b9bc132d206b370281, type: 3}
+  m_Name: icons
+  m_EditorClassIdentifier: 
+  hashCode: 128033944
+  material: {fileID: 1203823727201241130}
+  materialHashCode: 0
+  m_Version: 1.1.0
+  spriteSheet: {fileID: 2800000, guid: 28aec8e0d2d742847be7251ebcf04c13, type: 3}
+  m_SpriteCharacterTable:
+  - m_ElementType: 2
+    m_Unicode: 0
+    m_GlyphIndex: 0
+    m_Scale: 1
+    m_Name: attack
+    m_HashCode: -358435832
+  - m_ElementType: 2
+    m_Unicode: 0
+    m_GlyphIndex: 1
+    m_Scale: 1
+    m_Name: block
+    m_HashCode: 117895113
+  - m_ElementType: 2
+    m_Unicode: 0
+    m_GlyphIndex: 2
+    m_Scale: 1
+    m_Name: strength
+    m_HashCode: -311902043
+  - m_ElementType: 2
+    m_Unicode: 0
+    m_GlyphIndex: 3
+    m_Scale: 1
+    m_Name: agility
+    m_HashCode: 425436615
+  - m_ElementType: 2
+    m_Unicode: 0
+    m_GlyphIndex: 4
+    m_Scale: 1
+    m_Name: stamina
+    m_HashCode: 881991693
+  - m_ElementType: 2
+    m_Unicode: 0
+    m_GlyphIndex: 5
+    m_Scale: 1
+    m_Name: intelligence
+    m_HashCode: 196111765
+  - m_ElementType: 2
+    m_Unicode: 0
+    m_GlyphIndex: 6
+    m_Scale: 1
+    m_Name: heal
+    m_HashCode: 3639328
+  - m_ElementType: 2
+    m_Unicode: 0
+    m_GlyphIndex: 7
+    m_Scale: 1
+    m_Name: burn
+    m_HashCode: 3579915
+  m_SpriteGlyphTable:
+  - m_Index: 0
+    m_Metrics:
+      m_Width: 128
+      m_Height: 128
+      m_HorizontalBearingX: -36.78
+      m_HorizontalBearingY: 95.51
+      m_HorizontalAdvance: 87.2
+    m_GlyphRect:
+      m_X: 0
+      m_Y: 896
+      m_Width: 128
+      m_Height: 128
+    m_Scale: 1.4
+    m_AtlasIndex: 0
+    sprite: {fileID: -2978653956524333172, guid: 28aec8e0d2d742847be7251ebcf04c13,
+      type: 3}
+  - m_Index: 1
+    m_Metrics:
+      m_Width: 128
+      m_Height: 128
+      m_HorizontalBearingX: -30
+      m_HorizontalBearingY: 100
+      m_HorizontalAdvance: 90
+    m_GlyphRect:
+      m_X: 128
+      m_Y: 896
+      m_Width: 128
+      m_Height: 128
+    m_Scale: 1.4
+    m_AtlasIndex: 0
+    sprite: {fileID: -299690340437171572, guid: 28aec8e0d2d742847be7251ebcf04c13,
+      type: 3}
+  - m_Index: 2
+    m_Metrics:
+      m_Width: 128
+      m_Height: 128
+      m_HorizontalBearingX: -30.7
+      m_HorizontalBearingY: 97.5
+      m_HorizontalAdvance: 91.3
+    m_GlyphRect:
+      m_X: 256
+      m_Y: 896
+      m_Width: 128
+      m_Height: 128
+    m_Scale: 1.4
+    m_AtlasIndex: 0
+    sprite: {fileID: -1290855366162983238, guid: 28aec8e0d2d742847be7251ebcf04c13,
+      type: 3}
+  - m_Index: 3
+    m_Metrics:
+      m_Width: 128
+      m_Height: 128
+      m_HorizontalBearingX: -30
+      m_HorizontalBearingY: 100
+      m_HorizontalAdvance: 90
+    m_GlyphRect:
+      m_X: 384
+      m_Y: 896
+      m_Width: 128
+      m_Height: 128
+    m_Scale: 1.4
+    m_AtlasIndex: 0
+    sprite: {fileID: -2248273014285675650, guid: 28aec8e0d2d742847be7251ebcf04c13,
+      type: 3}
+  - m_Index: 4
+    m_Metrics:
+      m_Width: 128
+      m_Height: 128
+      m_HorizontalBearingX: -30
+      m_HorizontalBearingY: 100
+      m_HorizontalAdvance: 90
+    m_GlyphRect:
+      m_X: 512
+      m_Y: 896
+      m_Width: 128
+      m_Height: 128
+    m_Scale: 1.4
+    m_AtlasIndex: 0
+    sprite: {fileID: -2696506250795634678, guid: 28aec8e0d2d742847be7251ebcf04c13,
+      type: 3}
+  - m_Index: 5
+    m_Metrics:
+      m_Width: 128
+      m_Height: 128
+      m_HorizontalBearingX: -30
+      m_HorizontalBearingY: 100
+      m_HorizontalAdvance: 90
+    m_GlyphRect:
+      m_X: 640
+      m_Y: 896
+      m_Width: 128
+      m_Height: 128
+    m_Scale: 1.4
+    m_AtlasIndex: 0
+    sprite: {fileID: 6621252853494989987, guid: 28aec8e0d2d742847be7251ebcf04c13,
+      type: 3}
+  - m_Index: 6
+    m_Metrics:
+      m_Width: 128
+      m_Height: 128
+      m_HorizontalBearingX: -30
+      m_HorizontalBearingY: 100
+      m_HorizontalAdvance: 90
+    m_GlyphRect:
+      m_X: 768
+      m_Y: 896
+      m_Width: 128
+      m_Height: 128
+    m_Scale: 1.4
+    m_AtlasIndex: 0
+    sprite: {fileID: 3357360333254942192, guid: 28aec8e0d2d742847be7251ebcf04c13,
+      type: 3}
+  - m_Index: 7
+    m_Metrics:
+      m_Width: 128
+      m_Height: 128
+      m_HorizontalBearingX: -30
+      m_HorizontalBearingY: 100
+      m_HorizontalAdvance: 90
+    m_GlyphRect:
+      m_X: 889
+      m_Y: 891
+      m_Width: 128
+      m_Height: 128
+    m_Scale: 1.4
+    m_AtlasIndex: 0
+    sprite: {fileID: -4297203505398261690, guid: 28aec8e0d2d742847be7251ebcf04c13,
+      type: 3}
+  spriteInfoList: []
+  fallbackSpriteAssets: []
+--- !u!21 &1203823727201241130
+Material:
+  serializedVersion: 6
+  m_ObjectHideFlags: 1
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_Name: TextMeshPro/Sprite
+  m_Shader: {fileID: 4800000, guid: cf81c85f95fe47e1a27f6ae460cf182c, type: 3}
+  m_ShaderKeywords: 
+  m_LightmapFlags: 4
+  m_EnableInstancingVariants: 0
+  m_DoubleSidedGI: 0
+  m_CustomRenderQueue: -1
+  stringTagMap: {}
+  disabledShaderPasses: []
+  m_SavedProperties:
+    serializedVersion: 3
+    m_TexEnvs:
+    - _MainTex:
+        m_Texture: {fileID: 2800000, guid: 28aec8e0d2d742847be7251ebcf04c13, type: 3}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    m_Floats:
+    - _ColorMask: 15
+    - _Stencil: 0
+    - _StencilComp: 8
+    - _StencilOp: 0
+    - _StencilReadMask: 255
+    - _StencilWriteMask: 255
+    - _UseUIAlphaClip: 0
+    m_Colors:
+    - _ClipRect: {r: -32767, g: -32767, b: 32767, a: 32767}
+    - _Color: {r: 1, g: 1, b: 1, a: 1}
