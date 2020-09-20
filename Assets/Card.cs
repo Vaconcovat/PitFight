@@ -59,7 +59,7 @@ public class Card : MonoBehaviour
         }
     }
 
-    public enum CardPower {DrawAdditional, Vampire, Inferno };
+    public enum CardPower {DrawAdditional, Vampire, Inferno, DelaySlows };
     public List<CardPower> powers;
 
     public List<CardAttribute> attributes;
@@ -203,7 +203,7 @@ public class Card : MonoBehaviour
                     transform.position = desiredPosition;
                 }
                 else {
-                    transform.position = Vector3.Lerp(transform.position, desiredPosition, 5f * Time.deltaTime);
+                    transform.position = Vector3.Lerp(transform.position, desiredPosition, 10f * Time.deltaTime);
                 }
 
                 break;
@@ -215,7 +215,7 @@ public class Card : MonoBehaviour
                 }
                 else
                 {
-                    transform.localPosition = Vector3.Lerp(transform.localPosition, desiredPosition, 5f * Time.deltaTime);
+                    transform.localPosition = Vector3.Lerp(transform.localPosition, desiredPosition, 10f * Time.deltaTime);
                 }
 
                 break;
@@ -401,6 +401,28 @@ public class Card : MonoBehaviour
                 }
                 currentDelay = slowDelay;
                 UpdateDisplay();
+                if (owner.enemy.interrupts.delaySlowsInterrupt != null) {
+                    MoveToPile(GameManager.instance.playPile);
+                    owner.enemy.interrupts.delaySlowsInterrupt.MoveToPile(GameManager.instance.playPile);
+                    yield return owner.enemy.StartCoroutine(owner.enemy.StartChoice("Decline", "Pay 1", "Pay 1 energy to delay this card 1", true, owner.enemy.energy >= 1));
+                    int result = owner.enemy.GetChoiceResult();
+                    if (result == 0)
+                    {
+                        //cancelled
+                    }
+                    else if (result == 1)
+                    {
+                        //declined
+                    }
+                    else {
+                        //accepted;
+                        owner.enemy.energy -= 1;
+                        currentDelay += 1;
+                        UpdateDisplay();
+                    }
+                    owner.enemy.interrupts.delaySlowsInterrupt.MoveToPile(owner.enemy.powers);
+                }
+
                 MoveToPile(owner.queue);
                 owner.canPlay = true;
                 break;
@@ -424,6 +446,9 @@ public class Card : MonoBehaviour
                 break;
             case CardPower.Inferno:
                 owner.interrupts.infernoInterrupt = reg;
+                break;
+            case CardPower.DelaySlows:
+                owner.interrupts.delaySlowsInterrupt = reg;
                 break;
         }
     }

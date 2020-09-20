@@ -285,7 +285,7 @@ public class UIManager : MonoBehaviour
 
     public void SubmitChoice(int result) {
         choiceUI.SetActive(false);
-        GameManager.instance.activePlayer.SubmitChoice(result);
+        GameManager.instance.player.SubmitChoice(result);
     }
 
     public int humanAttack = 0;

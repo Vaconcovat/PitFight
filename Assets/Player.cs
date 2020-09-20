@@ -151,6 +151,7 @@ public class Player : MonoBehaviour
         public Card drawAdditionalInterrupt;
         public Card vampireInterrupt;
         public Card infernoInterrupt;
+        public Card delaySlowsInterrupt;
     }
     public Interrupts interrupts;
 
@@ -671,7 +672,21 @@ public class Player : MonoBehaviour
     public IEnumerator StartChoice(string choice1, string choice2, string choiceText, bool valid1 = true, bool valid2 = true) {
         Log.Write("Choice: " + choiceText + " (" + choice1 + ") (" + choice2 + ")");
         canPlay = false;
-        UIManager.instance.StartChoice(choice1, choice2, choiceText, valid1, valid2);
+        if (!human)
+        {
+            yield return GameManager.instance.medWait;
+            if (valid2)
+            {
+                choice_result = 2;
+            }
+            else {
+                choice_result = 1;
+            }
+        }
+        else {
+            UIManager.instance.StartChoice(choice1, choice2, choiceText, valid1, valid2);
+
+        }
 
         //wait until choice complete
         yield return new WaitUntil(() => choice_result != -1);

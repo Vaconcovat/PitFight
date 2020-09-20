@@ -528,7 +528,7 @@ public class GameManager : MonoBehaviour
         currentChoice = AiDecideCard();
 
         while (currentChoice != null) {
-            currentChoice.Play();
+            yield return currentChoice.StartCoroutine(currentChoice.PlayCoroutine());
             while (!opponent.canPlay) {
                 yield return 0;
             }
@@ -626,5 +626,9 @@ public class GameManager : MonoBehaviour
         player.canPlay = false;
         opponent.canPlay = false;
         currentPhase = GamePhase.End;
+    }
+
+    public void BackToMenu() {
+        UnityEngine.SceneManagement.SceneManager.LoadScene("MainMenu");
     }
 }
