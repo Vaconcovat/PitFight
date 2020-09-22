@@ -50,8 +50,8 @@ public class UI_PlayerSetup : MonoBehaviour
         //turn on each display
         for (int i = 0; i < character.startingCards.Count; ++i) {
             cardDisplays[i].gameObject.SetActive(true);
-            Card card = new Card();
-            card.InitFromData(character.startingCards[i]);
+            Card card = new Card(character.startingCards[i]);
+            //card.InitFromData(character.startingCards[i]);
             cardDisplays[i].card = card;
             cardDisplays[i].UpdateDisplay();
         }

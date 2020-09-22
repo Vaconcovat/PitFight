@@ -19,6 +19,9 @@ public class Persistence : MonoBehaviour
             instance = this;
             DontDestroyOnLoad(this);
         }
+        else {
+            Destroy(this);
+        }
     }
 
     public DeckListString playerDeck, opponentDeck;
@@ -77,6 +80,10 @@ public class Persistence : MonoBehaviour
 
     public CardData GetCardDataFromId(int id) {
         return cards[id];
+    }
+
+    public int GetIDFromCardData(CardData data) {
+        return cards.FindIndex(x => x.cardName == data.cardName);
     }
 
 #if UNITY_EDITOR

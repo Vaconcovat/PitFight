@@ -10,21 +10,21 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 4d5d9e97f3cd26d478b113588e32d89b, type: 3}
-  m_Name: Blazing Fist
+  m_Name: Confuse
   m_EditorClassIdentifier: 
   cardType: 4
   slowDelay: 0
-  energyCost: 3
-  cardName: Blazing Fist
+  energyCost: 2
+  cardName: Confuse
   cardText: 
-  art: {fileID: 21300000, guid: 6351f08f1e65e6743a9621a7cfb974ac, type: 3}
+  art: {fileID: 21300000, guid: 77aa1136f17cc3548acfe2d1d52cc627, type: 3}
   attributes: []
   keywords:
-  - keyword: 0
-    value: 3
+  - keyword: 10
+    value: 2
     parameters: 
-  - keyword: 20
-    value: 1
+  - keyword: 26
+    value: 2
     parameters: 
   powers: 
   discardType: 0

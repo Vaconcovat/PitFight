@@ -23,6 +23,7 @@ MonoBehaviour:
     value: 0
   keywords:
   - keyword: 0
-    value: 2
+    value: 1
+    parameters: 
   powers: 
   discardType: 0

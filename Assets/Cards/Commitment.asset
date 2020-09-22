@@ -18,16 +18,12 @@ MonoBehaviour:
   cardName: Commitment
   cardText: '[Cycle 2]
 
-    [Fading]
-
     <#005500>Gain 3 Energy
 
-    <#550000>Give
-    all cards in your hand [Fading]'
+    <#550000>Give all cards in
+    your hand [Fading]'
   art: {fileID: 21300000, guid: ce58a5f1d474c3240bf66113156a4a4b, type: 3}
   attributes:
-  - attribute: 0
-    value: 0
   - attribute: 2
     value: 2
   keywords:

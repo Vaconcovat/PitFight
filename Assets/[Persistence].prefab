@@ -110,5 +110,9 @@ MonoBehaviour:
   - {fileID: 11400000, guid: 07c018e97e5178b4ba9095490e2417b1, type: 2}
   - {fileID: 11400000, guid: a68f939168d8bdb4aa1389c14ac286c2, type: 2}
   - {fileID: 11400000, guid: 2489e29c3d329d4419dc82174ecc90b3, type: 2}
+  - {fileID: 11400000, guid: d1738bd0ab2cacd4eb9bd56be8047072, type: 2}
+  - {fileID: 11400000, guid: 37a95cce66df0254d9ae7cb0e4578360, type: 2}
+  - {fileID: 11400000, guid: 57931e0e5f8f5bf418dfe9c029388bb8, type: 2}
+  - {fileID: 11400000, guid: 1ad8be0ce1451e640a094a3b3766cabd, type: 2}
   loadPlayerDeck: {fileID: 11400000, guid: b2a40ebe2ad30304b8bf03c72a67ea1f, type: 2}
   loadOpponentDeck: {fileID: 11400000, guid: b2a40ebe2ad30304b8bf03c72a67ea1f, type: 2}

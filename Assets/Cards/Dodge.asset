@@ -14,7 +14,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   cardType: 0
   slowDelay: 0
-  energyCost: 3
+  energyCost: 2
   cardName: Dodge
   cardText: 
   art: {fileID: 21300000, guid: 49468632747423544bd82f43d5e09a8e, type: 3}

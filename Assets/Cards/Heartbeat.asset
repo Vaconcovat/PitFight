@@ -14,7 +14,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   cardType: 4
   slowDelay: 0
-  energyCost: 2
+  energyCost: 3
   cardName: Heartbeat
   cardText: 
   art: {fileID: 21300000, guid: 7bef0c0b1da4b0746aac7280afb5f0c1, type: 3}
@@ -22,5 +22,6 @@ MonoBehaviour:
   keywords:
   - keyword: 7
     value: 1
+    parameters: 
   powers: 
   discardType: 3

@@ -14,8 +14,18 @@ public class UI_MainMenu : MonoBehaviour
 
     public TMP_InputField healthInput;
 
+    public CardDisplay cursorDisplay;
+
+    Transform cursor;
+
+    void Start() {
+        cursor = cursorDisplay.transform.parent;
+    }
+
     public void Update() {
         startGameButton.interactable = ((playerSetup.verified && opponentSetup.verified) || randomDeck.isOn);
+        cursor.transform.position = Input.mousePosition;
+
     }
 
     public void StartGame() {
@@ -37,5 +47,20 @@ public class UI_MainMenu : MonoBehaviour
         Persistence.instance.startingHealthOverride = int.Parse(healthInput.text);
 
         UnityEngine.SceneManagement.SceneManager.LoadScene("Board");
+    }
+
+    public void ShowCursor(CardDisplay reference) {
+        cursorDisplay.gameObject.SetActive(true);
+        cursorDisplay.card = reference.card;
+        cursorDisplay.UpdateDisplay();
+    }
+
+    public void HideCursor() {
+        cursorDisplay.gameObject.SetActive(false);
+    }
+
+    public void GoToDeckbuilder() {
+        UnityEngine.SceneManagement.SceneManager.LoadScene("Deckbuilder");
+
     }
 }

@@ -18,8 +18,12 @@ MonoBehaviour:
   cardName: Jab
   cardText: 
   art: {fileID: 21300000, guid: 1aa08d1c6dae5ec44bae5b7b07e13f2c, type: 3}
-  attributes: []
+  attributes:
+  - attribute: 0
+    value: 0
   keywords:
   - keyword: 0
     value: 1
+    parameters: 
+  powers: 
   discardType: 2

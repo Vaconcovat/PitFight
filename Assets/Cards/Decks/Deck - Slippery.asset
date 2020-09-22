@@ -1,0 +1,36 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 1c042a8262ceeed4ea44198965e9a66c, type: 3}
+  m_Name: Deck - Slippery
+  m_EditorClassIdentifier: 
+  deckName: Slippery
+  cards:
+  - {fileID: 11400000, guid: 6f593d7f0a1a7bc4baaff39b63345291, type: 2}
+  - {fileID: 11400000, guid: 6f593d7f0a1a7bc4baaff39b63345291, type: 2}
+  - {fileID: 11400000, guid: 6f593d7f0a1a7bc4baaff39b63345291, type: 2}
+  - {fileID: 11400000, guid: 4d3c41d2979aaaa4aadd65b17729db5a, type: 2}
+  - {fileID: 11400000, guid: 4d3c41d2979aaaa4aadd65b17729db5a, type: 2}
+  - {fileID: 11400000, guid: 4d3c41d2979aaaa4aadd65b17729db5a, type: 2}
+  - {fileID: 11400000, guid: a0b90168b755dfd4cb51838ae0463b81, type: 2}
+  - {fileID: 11400000, guid: a0b90168b755dfd4cb51838ae0463b81, type: 2}
+  - {fileID: 11400000, guid: a0b90168b755dfd4cb51838ae0463b81, type: 2}
+  - {fileID: 11400000, guid: 3517fac18de225a409e185c73d59dd18, type: 2}
+  - {fileID: 11400000, guid: 3517fac18de225a409e185c73d59dd18, type: 2}
+  - {fileID: 11400000, guid: 3517fac18de225a409e185c73d59dd18, type: 2}
+  - {fileID: 11400000, guid: 1a43ab5dacd753749810309776011941, type: 2}
+  - {fileID: 11400000, guid: 1a43ab5dacd753749810309776011941, type: 2}
+  - {fileID: 11400000, guid: d1738bd0ab2cacd4eb9bd56be8047072, type: 2}
+  - {fileID: 11400000, guid: d1738bd0ab2cacd4eb9bd56be8047072, type: 2}
+  - {fileID: 11400000, guid: ef029c68c12200c459183c6ec602ec12, type: 2}
+  - {fileID: 11400000, guid: ef029c68c12200c459183c6ec602ec12, type: 2}
+  - {fileID: 11400000, guid: 1ad8be0ce1451e640a094a3b3766cabd, type: 2}
+  - {fileID: 11400000, guid: 1ad8be0ce1451e640a094a3b3766cabd, type: 2}

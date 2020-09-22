@@ -731,6 +731,7 @@ public class Player : MonoBehaviour
             if (resetChoice) choice_result = -1;
         }
         else {
+            yield return GameManager.instance.medWait;
             SubmitCard(validPile.cards[0]);
         }
         

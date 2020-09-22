@@ -14,13 +14,14 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   cardType: 0
   slowDelay: 0
-  energyCost: 0
+  energyCost: 1
   cardName: BouncePower
   cardText: 
-  art: {fileID: 0}
+  art: {fileID: 21300000, guid: 49468632747423544bd82f43d5e09a8e, type: 3}
   attributes: []
   keywords:
   - keyword: 21
     value: 1
+    parameters: 
   powers: 
   discardType: 0

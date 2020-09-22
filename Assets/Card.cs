@@ -20,7 +20,8 @@ public class Card : MonoBehaviour
     public class CardKeyword {
         public enum Keyword {Attack, Block, Draw, Strength, Agility, Stamina, Intelligence,
             Heal, LoseHealth, TakeDamage, Stun, StunSelf, Clone, Bounce, Scry, CleanHand,
-            Delay, Remember, Discard, GainEnergy, Ignite, BouncePower, Give, Concentrate, AddKeyword, AddAttribute
+            Delay, Remember, Discard, GainEnergy, Ignite, BouncePower, Give, Concentrate, AddKeyword, AddAttribute,
+            OpponentDiscard
         }
         [HorizontalGroup(LabelWidth = 60f)] public Keyword keyword;
         [HorizontalGroup(LabelWidth = 40f)] public int value;
@@ -615,9 +616,52 @@ public class Card : MonoBehaviour
     const string negativeColor = "<#550000>";
     const string endColor = "</color>";
 
+    public Card(CardType cardType, int slowDelay, int energyCost, string cardName, string cardText, Sprite art, List<CardPower> powers, List<CardAttribute> attributes, List<CardKeyword> keywords, DiscardType discardType, CardDisplay display, Player owner, Pile currentPile, int currentDelay, bool faceUp, bool revealed, GameObject revelIcon, Vector3 desiredPosition, Space desiredPosSpace, string altText)
+    {
+        this.cardType = cardType;
+        this.slowDelay = slowDelay;
+        this.energyCost = energyCost;
+        this.cardName = cardName;
+        this.cardText = cardText;
+        this.art = art;
+        this.powers = powers;
+        this.attributes = attributes;
+        this.keywords = keywords;
+        this.discardType = discardType;
+        this.display = display;
+        this.owner = owner;
+        this.currentPile = currentPile;
+        this.currentDelay = currentDelay;
+        this.faceUp = faceUp;
+        this.revealed = revealed;
+        this.revelIcon = revelIcon;
+        this.desiredPosition = desiredPosition;
+        this.desiredPosSpace = desiredPosSpace;
+        this.altText = altText;
+    }
+
+    public Card(CardData data)
+    {
+        this.cardType = data.cardType;
+        this.slowDelay = data.slowDelay;
+        this.energyCost = data.energyCost;
+        this.cardName = data.cardName;
+
+        this.attributes = new List<CardAttribute>(data.attributes);
+        this.keywords = new List<CardKeyword>(data.keywords);
+        this.discardType = data.discardType;
+        this.powers = new List<CardPower>(data.powers);
+
+
+        this.cardText = data.cardText;
+
+
+        this.art = data.art;
+    }
+
     public string GetKeywordCardText(CardKeyword kw) {
         //if we're not in the game
-        if (owner == null) return "";
+        if (owner == null) owner = new Player();
 
         switch (kw.keyword)
         {
@@ -1142,7 +1186,8 @@ public class Card : MonoBehaviour
                             c.attributes.Add(a_parsed);
                             c.UpdateDisplay();
                         }
-                        else {
+                        else
+                        {
                             Log.Write(c.cardName + " already has this attribute!");
                         }
                     }
@@ -1163,7 +1208,8 @@ public class Card : MonoBehaviour
                                 owner.selectedCard.attributes.Add(a_parsed);
                                 owner.selectedCard.UpdateDisplay();
                             }
-                            else {
+                            else
+                            {
                                 UIManager.Popup(owner.selectedCard.cardName + " already has this attribute!");
 
                             }
@@ -1177,6 +1223,25 @@ public class Card : MonoBehaviour
 
                     }
                     owner.cardSelectingPile = new List<Pile>();
+                }
+                break;
+            case CardKeyword.Keyword.OpponentDiscard:
+                for (int i = 0; i < kw.value; ++i)
+                {
+
+                    GameManager.instance.playPile.Hide(true);
+                    yield return owner.enemy.StartCoroutine(owner.enemy.StartCardSelect("Discard " + (kw.value - i) + " cards", owner.enemy.hand));
+                    if (owner.enemy.selectedCard != null)
+                    {
+                        Log.Write("discard card selected");
+                        owner.enemy.selectedCard.MoveToPile(owner.enemy.discardPile);
+                        owner.enemy.selectedCard = null;
+                    }
+                    owner.enemy.cardSelectingPile = new List<Pile>();
+                    GameManager.instance.playPile.Hide(false);
+
+
+
                 }
                 break;
         }
