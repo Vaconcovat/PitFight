@@ -10,18 +10,28 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 4d5d9e97f3cd26d478b113588e32d89b, type: 3}
-  m_Name: Stubborn
+  m_Name: Twisting Vines
   m_EditorClassIdentifier: 
-  cardType: 3
+  cardType: 4
   slowDelay: 0
-  energyCost: 0
-  cardName: Stubborn
-  cardText: '-4 Intelligence
-
-    At the end of your turn, do not discard your hand.'
-  art: {fileID: 21300000, guid: dfab014767232b040bedab28635f11d4, type: 3}
+  energyCost: 6
+  cardName: Twisting Vines
+  cardText: 
+  art: {fileID: 21300000, guid: 77aa1136f17cc3548acfe2d1d52cc627, type: 3}
   attributes: []
-  keywords: []
-  powers: 06000000
+  keywords:
+  - keyword: 0
+    value: 8
+    parameters: 
+  - keyword: 10
+    value: 1
+    parameters: 
+  - keyword: 31
+    value: -1
+    parameters: 
+  - keyword: 30
+    value: -1
+    parameters: 
+  powers: 
   discardType: 0
-  category: 3
+  category: 0

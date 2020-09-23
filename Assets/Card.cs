@@ -23,7 +23,7 @@ public class Card : MonoBehaviour
         public enum Keyword {Attack, Block, Draw, Strength, Agility, Stamina, Intelligence,
             Heal, LoseHealth, TakeDamage, Stun, StunSelf, Clone, Bounce, Scry, CleanHand,
             Delay, Remember, Discard, GainEnergy, Ignite, IgniteSelf, BouncePower, Give, Concentrate, AddKeyword, AddAttribute,
-            OpponentDiscard
+            OpponentDiscard, OpponentStrength, OpponentAgility, OpponentStamina, OpponentIntelligence
         }
         [HorizontalGroup(LabelWidth = 60f)] public Keyword keyword;
         [HorizontalGroup(LabelWidth = 40f)] public int value;
@@ -1337,6 +1337,21 @@ public class Card : MonoBehaviour
 
 
                 }
+                break;
+            case CardKeyword.Keyword.OpponentStrength:
+                owner.enemy.GainStrength(kw.value);
+                break;
+            case CardKeyword.Keyword.OpponentAgility:
+                owner.enemy.GainAgility(kw.value);
+
+                break;
+            case CardKeyword.Keyword.OpponentStamina:
+                owner.enemy.GainStamina(kw.value);
+
+                break;
+            case CardKeyword.Keyword.OpponentIntelligence:
+                owner.enemy.GainIntelligence(kw.value);
+
                 break;
         }
         yield return GameManager.instance.medWait;

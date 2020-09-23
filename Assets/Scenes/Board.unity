@@ -5398,6 +5398,7 @@ MonoBehaviour:
     delaySlowsInterrupt: {fileID: 0}
     napalmInterrupt: {fileID: 0}
     lessonInterrupt: {fileID: 0}
+    stubbornInterrupt: {fileID: 0}
   selectedCard: {fileID: 0}
   cardSelectingPile: []
 --- !u!4 &709696384
@@ -13891,6 +13892,7 @@ MonoBehaviour:
     delaySlowsInterrupt: {fileID: 0}
     napalmInterrupt: {fileID: 0}
     lessonInterrupt: {fileID: 0}
+    stubbornInterrupt: {fileID: 0}
   selectedCard: {fileID: 0}
   cardSelectingPile: []
 --- !u!4 &2044085751
@@ -14753,7 +14755,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!114 &2132769948
 MonoBehaviour:
   m_ObjectHideFlags: 0

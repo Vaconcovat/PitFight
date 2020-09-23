@@ -1335,6 +1335,11 @@ PrefabInstance:
       propertyPath: m_AnchoredPosition.y
       value: 0.0025024414
       objectReference: {fileID: 0}
+    - target: {fileID: 5834005271597706399, guid: 21053b3b9e8195a4f9ba42a5b24ad1b3,
+        type: 3}
+      propertyPath: m_AnchoredPosition.x
+      value: -0.0014650822
+      objectReference: {fileID: 0}
     - target: {fileID: 6173563056059415930, guid: 21053b3b9e8195a4f9ba42a5b24ad1b3,
         type: 3}
       propertyPath: m_textInfo.characterCount
@@ -2594,6 +2599,16 @@ PrefabInstance:
       propertyPath: m_AnchoredPosition.x
       value: -0.0014801025
       objectReference: {fileID: 0}
+    - target: {fileID: 5834005271597706399, guid: 21053b3b9e8195a4f9ba42a5b24ad1b3,
+        type: 3}
+      propertyPath: m_AnchoredPosition.x
+      value: -0.0014650822
+      objectReference: {fileID: 0}
+    - target: {fileID: 5834005271597706399, guid: 21053b3b9e8195a4f9ba42a5b24ad1b3,
+        type: 3}
+      propertyPath: m_AnchoredPosition.y
+      value: 1.0490112
+      objectReference: {fileID: 0}
     - target: {fileID: 6173563056059415930, guid: 21053b3b9e8195a4f9ba42a5b24ad1b3,
         type: 3}
       propertyPath: m_textInfo.characterCount
@@ -3104,10 +3119,10 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   m_Padding:
     m_Left: 27
-    m_Right: 0
+    m_Right: 200
     m_Top: 31
     m_Bottom: 0
-  m_ChildAlignment: 0
+  m_ChildAlignment: 2
   m_Spacing: 200
   m_ChildForceExpandWidth: 0
   m_ChildForceExpandHeight: 0

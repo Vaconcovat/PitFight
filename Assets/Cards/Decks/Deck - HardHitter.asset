@@ -14,8 +14,6 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   deckName: HardHitter
   cards:
-  - {fileID: 11400000, guid: e6e29fedddccc6a418149757b9a967ad, type: 2}
-  - {fileID: 11400000, guid: e6e29fedddccc6a418149757b9a967ad, type: 2}
   - {fileID: 11400000, guid: 26f7d0bd67c78c84386441f7713e5b14, type: 2}
   - {fileID: 11400000, guid: 26f7d0bd67c78c84386441f7713e5b14, type: 2}
   - {fileID: 11400000, guid: e2ae68c6d64f0204c8ea73339afecd79, type: 2}
@@ -34,3 +32,5 @@ MonoBehaviour:
   - {fileID: 11400000, guid: 964f413f7f4568b45aed5628e13ea573, type: 2}
   - {fileID: 11400000, guid: 39e5a35104536fa47a91aed85c550e8d, type: 2}
   - {fileID: 11400000, guid: 39e5a35104536fa47a91aed85c550e8d, type: 2}
+  - {fileID: 11400000, guid: e6e29fedddccc6a418149757b9a967ad, type: 2}
+  - {fileID: 11400000, guid: e6e29fedddccc6a418149757b9a967ad, type: 2}
