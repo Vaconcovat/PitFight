@@ -154,6 +154,7 @@ public class Player : MonoBehaviour
         public Card delaySlowsInterrupt;
         public Card napalmInterrupt;
         public Card lessonInterrupt;
+        public Card stubbornInterrupt;
     }
     public Interrupts interrupts;
 
@@ -265,43 +266,55 @@ public class Player : MonoBehaviour
         }
         yield return GameManager.instance.shortWait;
 
-        Log.Write("Discarding Hand...");
-        //int cardsTodiscard = hand.cards.Count;
-        List<Card> cardsInHand = new List<Card>(hand.cards);
+        if (interrupts.stubbornInterrupt == null)
+        {
+            Log.Write("Discarding Hand...");
+            //int cardsTodiscard = hand.cards.Count;
+            List<Card> cardsInHand = new List<Card>(hand.cards);
 
-        for (int i = cardsInHand.Count - 1; i >= 0; --i) {
-            Card c = cardsInHand[i];
-
-            if (c.attributes.FirstOrDefault(x => x.attribute == Card.CardAttribute.Attribute.Fading) != null)
+            for (int i = cardsInHand.Count - 1; i >= 0; --i)
             {
-                //we are fading, burn
-                Log.Write(c.cardName + " is fading, burning");
-                //c.MoveToPile(GameManager.instance.playPile);
-                c.SetReveal(true);
-                yield return GameManager.instance.medWait;
-                c.Burn();
-                yield return GameManager.instance.medWait;
+                Card c = cardsInHand[i];
 
-            }
-            else if (c.attributes.FirstOrDefault(x => x.attribute == Card.CardAttribute.Attribute.Hold) != null)
-            {
-                //do nothing, hold the card
-                Log.Write(c.cardName + " has hold, will not be discarded");
-                //c.MoveToPile(GameManager.instance.playPile);
-                c.SetReveal(true);
-                yield return GameManager.instance.medWait;
-                UIManager.Popup("Hold");
-                c.MoveToPile(hand);
-                yield return GameManager.instance.medWait;
+                if (c.attributes.FirstOrDefault(x => x.attribute == Card.CardAttribute.Attribute.Fading) != null)
+                {
+                    //we are fading, burn
+                    Log.Write(c.cardName + " is fading, burning");
+                    //c.MoveToPile(GameManager.instance.playPile);
+                    c.SetReveal(true);
+                    yield return GameManager.instance.medWait;
+                    c.Burn();
+                    yield return GameManager.instance.medWait;
 
-            }
-            else {
-                //no other attributes, discard
-                c.Discard();
-            }
+                }
+                else if (c.attributes.FirstOrDefault(x => x.attribute == Card.CardAttribute.Attribute.Hold) != null)
+                {
+                    //do nothing, hold the card
+                    Log.Write(c.cardName + " has hold, will not be discarded");
+                    //c.MoveToPile(GameManager.instance.playPile);
+                    c.SetReveal(true);
+                    yield return GameManager.instance.medWait;
+                    UIManager.Popup("Hold");
+                    c.MoveToPile(hand);
+                    yield return GameManager.instance.medWait;
 
-            yield return GameManager.instance.shortWait;
+                }
+                else
+                {
+                    //no other attributes, discard
+                    c.Discard();
+                }
+
+                yield return GameManager.instance.shortWait;
+            }
         }
+        else {
+            interrupts.stubbornInterrupt.MoveToPile(GameManager.instance.playPile);
+            yield return GameManager.instance.medWait;
+            interrupts.stubbornInterrupt.MoveToPile(powers);
+        }
+
+
 
         Log.Write("Drawing new hand...");
         yield return StartCoroutine(StartDrawCoroutine(intelligence));

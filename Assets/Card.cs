@@ -62,7 +62,7 @@ public class Card : MonoBehaviour
         }
     }
 
-    public enum CardPower {DrawAdditional, Vampire, Inferno, DelaySlows, Napalm, Lesson };
+    public enum CardPower {DrawAdditional, Vampire, Inferno, DelaySlows, Napalm, Lesson, Stubborn };
     public List<CardPower> powers;
 
     public List<CardAttribute> attributes;
@@ -452,22 +452,72 @@ public class Card : MonoBehaviour
         switch (power)
         {
             case CardPower.DrawAdditional:
+                if(owner.interrupts.drawAdditionalInterrupt != null){
+                    owner.interrupts.drawAdditionalInterrupt.MoveToPile(owner.burnPile);
+                    UIManager.Popup("You already have this power in play!");
+                }
+
                 owner.interrupts.drawAdditionalInterrupt = reg;
                 break;
             case CardPower.Vampire:
+                if (owner.enemy.interrupts.vampireInterrupt != null)
+                {
+                    owner.enemy.interrupts.vampireInterrupt.MoveToPile(owner.enemy.burnPile);
+                    UIManager.Popup("You already have this power in play!");
+                }
+
                 owner.enemy.interrupts.vampireInterrupt = reg;
                 break;
             case CardPower.Inferno:
+                if (owner.interrupts.infernoInterrupt != null)
+                {
+                    owner.interrupts.infernoInterrupt.MoveToPile(owner.burnPile);
+                    UIManager.Popup("You already have this power in play!");
+                }
+
                 owner.interrupts.infernoInterrupt = reg;
                 break;
             case CardPower.DelaySlows:
+                if (owner.interrupts.delaySlowsInterrupt != null)
+                {
+                    owner.interrupts.delaySlowsInterrupt.MoveToPile(owner.burnPile);
+                    UIManager.Popup("You already have this power in play!");
+                }
+
                 owner.interrupts.delaySlowsInterrupt = reg;
                 break;
             case CardPower.Napalm:
+                if (owner.interrupts.napalmInterrupt != null)
+                {
+                    owner.interrupts.napalmInterrupt.MoveToPile(owner.burnPile);
+                    UIManager.Popup("You already have this power in play!");
+                }
+
                 owner.interrupts.napalmInterrupt = reg;
                 break;
             case CardPower.Lesson:
+                if (owner.interrupts.lessonInterrupt != null)
+                {
+                    owner.interrupts.lessonInterrupt.MoveToPile(owner.burnPile);
+                    UIManager.Popup("You already have this power in play!");
+                }
+
                 owner.interrupts.lessonInterrupt = reg;
+                break;
+            case CardPower.Stubborn:
+                if (owner.interrupts.stubbornInterrupt != null)
+                {
+                    owner.interrupts.stubbornInterrupt.MoveToPile(owner.burnPile);
+                    UIManager.Popup("You already have this power in play!");
+                }
+                if (register)
+                {
+                    owner.GainIntelligence(-4);
+                }
+                else {
+                    owner.GainIntelligence(4);
+                }
+                owner.interrupts.stubbornInterrupt = reg;
                 break;
         }
     }
