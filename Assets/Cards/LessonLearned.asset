@@ -10,15 +10,16 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 4d5d9e97f3cd26d478b113588e32d89b, type: 3}
-  m_Name: FireDude-Inferno
+  m_Name: LessonLearned
   m_EditorClassIdentifier: 
   cardType: 3
   slowDelay: 0
-  energyCost: 3
-  cardName: Napalm
-  cardText: When you create a fire card, you may pay 2 to give it "Clone 1"
-  art: {fileID: 21300000, guid: 49468632747423544bd82f43d5e09a8e, type: 3}
+  energyCost: 2
+  cardName: Lesson Learned
+  cardText: Whenever you lose 2 or more health, draw a card.
+  art: {fileID: 21300000, guid: 9702bdc16d9556446b1a55bce4f731d5, type: 3}
   attributes: []
   keywords: []
-  powers: 02000000
+  powers: 05000000
   discardType: 0
+  category: 3

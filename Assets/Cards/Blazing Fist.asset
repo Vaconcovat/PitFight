@@ -21,10 +21,11 @@ MonoBehaviour:
   attributes: []
   keywords:
   - keyword: 0
-    value: 3
+    value: 5
     parameters: 
   - keyword: 20
     value: 1
     parameters: 
   powers: 
   discardType: 0
+  category: 0

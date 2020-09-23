@@ -11,6 +11,8 @@ public class Card : MonoBehaviour
     [ShowIf("cardType", CardType.Slow)]
     public int slowDelay = 0;
     public int energyCost;
+    public enum CardCategory {Attack, Defence, Maneuver, Power, Burden }
+    public CardCategory category;
     public string cardName = "Card";
     [Multiline]
     public string cardText = "";
@@ -20,7 +22,7 @@ public class Card : MonoBehaviour
     public class CardKeyword {
         public enum Keyword {Attack, Block, Draw, Strength, Agility, Stamina, Intelligence,
             Heal, LoseHealth, TakeDamage, Stun, StunSelf, Clone, Bounce, Scry, CleanHand,
-            Delay, Remember, Discard, GainEnergy, Ignite, BouncePower, Give, Concentrate, AddKeyword, AddAttribute,
+            Delay, Remember, Discard, GainEnergy, Ignite, IgniteSelf, BouncePower, Give, Concentrate, AddKeyword, AddAttribute,
             OpponentDiscard
         }
         [HorizontalGroup(LabelWidth = 60f)] public Keyword keyword;
@@ -60,7 +62,7 @@ public class Card : MonoBehaviour
         }
     }
 
-    public enum CardPower {DrawAdditional, Vampire, Inferno, DelaySlows };
+    public enum CardPower {DrawAdditional, Vampire, Inferno, DelaySlows, Napalm, Lesson };
     public List<CardPower> powers;
 
     public List<CardAttribute> attributes;
@@ -86,14 +88,22 @@ public class Card : MonoBehaviour
         this.energyCost = data.energyCost;
         this.cardName = data.cardName;
 
-        this.attributes = new List<CardAttribute>(data.attributes);
-        this.keywords = new List<CardKeyword>(data.keywords);
+        this.attributes = new List<CardAttribute>();
+        foreach (CardAttribute att in data.attributes) {
+            this.attributes.Add(new CardAttribute() { attribute = att.attribute, value = att.value });
+        }
+        this.keywords = new List<CardKeyword>();
+        foreach (CardKeyword kw in data.keywords)
+        {
+            this.keywords.Add(new CardKeyword() { keyword = kw.keyword, value = kw.value, parameters = kw.parameters });
+        }
         this.discardType = data.discardType;
         this.powers = new List<CardPower>(data.powers);
 
         
         this.cardText = data.cardText;
-        
+
+        this.category = data.category;
 
         this.art = data.art;
     }
@@ -115,6 +125,8 @@ public class Card : MonoBehaviour
 
 
         data.art = this.art;
+
+        data.category = this.category;
 
         return data;
     }
@@ -451,6 +463,12 @@ public class Card : MonoBehaviour
             case CardPower.DelaySlows:
                 owner.interrupts.delaySlowsInterrupt = reg;
                 break;
+            case CardPower.Napalm:
+                owner.interrupts.napalmInterrupt = reg;
+                break;
+            case CardPower.Lesson:
+                owner.interrupts.lessonInterrupt = reg;
+                break;
         }
     }
 
@@ -616,7 +634,7 @@ public class Card : MonoBehaviour
     const string negativeColor = "<#550000>";
     const string endColor = "</color>";
 
-    public Card(CardType cardType, int slowDelay, int energyCost, string cardName, string cardText, Sprite art, List<CardPower> powers, List<CardAttribute> attributes, List<CardKeyword> keywords, DiscardType discardType, CardDisplay display, Player owner, Pile currentPile, int currentDelay, bool faceUp, bool revealed, GameObject revelIcon, Vector3 desiredPosition, Space desiredPosSpace, string altText)
+    public Card(CardType cardType, int slowDelay, int energyCost, string cardName, string cardText, Sprite art, List<CardPower> powers, List<CardAttribute> attributes, List<CardKeyword> keywords, DiscardType discardType, CardDisplay display, Player owner, Pile currentPile, int currentDelay, bool faceUp, bool revealed, GameObject revelIcon, Vector3 desiredPosition, Space desiredPosSpace, string altText, CardCategory category)
     {
         this.cardType = cardType;
         this.slowDelay = slowDelay;
@@ -625,8 +643,16 @@ public class Card : MonoBehaviour
         this.cardText = cardText;
         this.art = art;
         this.powers = powers;
-        this.attributes = attributes;
-        this.keywords = keywords;
+        this.attributes = new List<CardAttribute>();
+        foreach (CardAttribute att in attributes)
+        {
+            this.attributes.Add(new CardAttribute() { attribute = att.attribute, value = att.value });
+        }
+        this.keywords = new List<CardKeyword>();
+        foreach (CardKeyword kw in keywords)
+        {
+            this.keywords.Add(new CardKeyword() { keyword = kw.keyword, value = kw.value, parameters = kw.parameters });
+        }
         this.discardType = discardType;
         this.display = display;
         this.owner = owner;
@@ -638,6 +664,7 @@ public class Card : MonoBehaviour
         this.desiredPosition = desiredPosition;
         this.desiredPosSpace = desiredPosSpace;
         this.altText = altText;
+        this.category = category;
     }
 
     public Card(CardData data)
@@ -647,14 +674,22 @@ public class Card : MonoBehaviour
         this.energyCost = data.energyCost;
         this.cardName = data.cardName;
 
-        this.attributes = new List<CardAttribute>(data.attributes);
-        this.keywords = new List<CardKeyword>(data.keywords);
+        this.attributes = new List<CardAttribute>();
+        foreach (CardAttribute att in data.attributes)
+        {
+            this.attributes.Add(new CardAttribute() { attribute = att.attribute, value = att.value });
+        }
+        this.keywords = new List<CardKeyword>();
+        foreach (CardKeyword kw in data.keywords)
+        {
+            this.keywords.Add(new CardKeyword() { keyword = kw.keyword, value = kw.value, parameters = kw.parameters });
+        }
         this.discardType = data.discardType;
         this.powers = new List<CardPower>(data.powers);
 
 
         this.cardText = data.cardText;
-
+        this.category = data.category;
 
         this.art = data.art;
     }
@@ -820,6 +855,8 @@ public class Card : MonoBehaviour
                 break;
             case CardKeyword.Keyword.Ignite:
                 return "Ignite x: Add x 'Fire' cards to your opponent's draw pile";
+            case CardKeyword.Keyword.IgniteSelf:
+                return "Ignite x: Add x 'Fire' cards to your draw pile";
             case CardKeyword.Keyword.BouncePower:
                 break;
             case CardKeyword.Keyword.Give:
@@ -1018,6 +1055,13 @@ public class Card : MonoBehaviour
                 for (int i = 0; i < kw.value; ++i)
                 {
                     yield return owner.StartCoroutine(owner.SpawnCard(GameManager.instance.fireCard, owner.enemy, owner.enemy.drawPile));
+
+                }
+                break;
+            case CardKeyword.Keyword.IgniteSelf:
+                for (int i = 0; i < kw.value; ++i)
+                {
+                    yield return owner.StartCoroutine(owner.SpawnCard(GameManager.instance.fireCard, owner, owner.drawPile));
 
                 }
                 break;

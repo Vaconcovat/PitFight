@@ -152,6 +152,8 @@ public class Player : MonoBehaviour
         public Card vampireInterrupt;
         public Card infernoInterrupt;
         public Card delaySlowsInterrupt;
+        public Card napalmInterrupt;
+        public Card lessonInterrupt;
     }
     public Interrupts interrupts;
 
@@ -449,6 +451,9 @@ public class Player : MonoBehaviour
         if (interrupts.vampireInterrupt != null && value > 0) {
             enemy.Heal(1);
         }
+        if (interrupts.lessonInterrupt != null && value > 1) {
+            StartCoroutine(StartDrawCoroutine(1));
+        }
 
         int previousHealth = health;
         health -= value;
@@ -587,6 +592,17 @@ public class Player : MonoBehaviour
         card.MoveToPile(GameManager.instance.playPile);
         card.SetFacing(true);
         card.SetReveal(true);
+        if (interrupts.napalmInterrupt != null && card.cardName == GameManager.instance.fireCard.cardName)
+        {
+            interrupts.napalmInterrupt.MoveToPile(GameManager.instance.playPile);
+            yield return GameManager.instance.medWait;
+            card.keywords[0].value = 3;
+            card.UpdateDisplay();
+            yield return GameManager.instance.medWait;
+            interrupts.napalmInterrupt.MoveToPile(powers);
+
+        }
+
         if (interrupts.infernoInterrupt != null && card.cardName == GameManager.instance.fireCard.cardName) {
             interrupts.infernoInterrupt.MoveToPile(GameManager.instance.playPile);
             yield return StartCoroutine(StartChoice("Decline", "Pay 2", "Pay 2 energy to give this card Clone 1", true, energy >= 2));

@@ -22,6 +22,10 @@ MonoBehaviour:
   keywords:
   - keyword: 6
     value: 1
+    parameters: 
   - keyword: 4
     value: -1
+    parameters: 
+  powers: 
   discardType: 0
+  category: 2

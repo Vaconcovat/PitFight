@@ -21,7 +21,8 @@ MonoBehaviour:
   attributes: []
   keywords:
   - keyword: 0
-    value: 7
+    value: 12
     parameters: 
   powers: 
   discardType: 0
+  category: 0

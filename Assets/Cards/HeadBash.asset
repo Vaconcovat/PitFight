@@ -24,7 +24,8 @@ MonoBehaviour:
     value: 1
     parameters: 
   - keyword: 0
-    value: 3
+    value: 6
     parameters: 
   powers: 
   discardType: 0
+  category: 0

@@ -12,7 +12,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 4d5d9e97f3cd26d478b113588e32d89b, type: 3}
   m_Name: John-Blind
   m_EditorClassIdentifier: 
-  cardType: 0
+  cardType: 4
   slowDelay: 0
   energyCost: 3
   cardName: Blind
@@ -21,7 +21,8 @@ MonoBehaviour:
   attributes: []
   keywords:
   - keyword: 10
-    value: 2
+    value: 3
     parameters: 
   powers: 
   discardType: 1
+  category: 2

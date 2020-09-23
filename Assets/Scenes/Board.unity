@@ -5396,6 +5396,8 @@ MonoBehaviour:
     vampireInterrupt: {fileID: 0}
     infernoInterrupt: {fileID: 0}
     delaySlowsInterrupt: {fileID: 0}
+    napalmInterrupt: {fileID: 0}
+    lessonInterrupt: {fileID: 0}
   selectedCard: {fileID: 0}
   cardSelectingPile: []
 --- !u!4 &709696384
@@ -7874,7 +7876,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 1, y: 1}
   m_AnchorMax: {x: 1, y: 1}
-  m_AnchoredPosition: {x: 0, y: -0.010284}
+  m_AnchoredPosition: {x: 0, y: -0.010253906}
   m_SizeDelta: {x: 167.32129, y: 48.328804}
   m_Pivot: {x: 1, y: 1}
 --- !u!114 &1038448393
@@ -13887,6 +13889,8 @@ MonoBehaviour:
     vampireInterrupt: {fileID: 0}
     infernoInterrupt: {fileID: 0}
     delaySlowsInterrupt: {fileID: 0}
+    napalmInterrupt: {fileID: 0}
+    lessonInterrupt: {fileID: 0}
   selectedCard: {fileID: 0}
   cardSelectingPile: []
 --- !u!4 &2044085751
@@ -14615,7 +14619,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 1, y: 1}
   m_AnchorMax: {x: 1, y: 1}
-  m_AnchoredPosition: {x: 0.0092773, y: -50}
+  m_AnchoredPosition: {x: 0.009277344, y: -50}
   m_SizeDelta: {x: 167.32129, y: 48.328804}
   m_Pivot: {x: 1, y: 1}
 --- !u!114 &2125799453
@@ -15478,7 +15482,7 @@ PrefabInstance:
     - target: {fileID: 7477042754408519407, guid: e2cedb541acd20c47b1f30cf418ca6d2,
         type: 3}
       propertyPath: startingHealthOverride
-      value: 20
+      value: 30
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: e2cedb541acd20c47b1f30cf418ca6d2, type: 3}

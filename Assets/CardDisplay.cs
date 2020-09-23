@@ -21,6 +21,7 @@ public class CardDisplay : MonoBehaviour
     public TextMeshProUGUI cardDelay;
     public Image cardArt;
 
+    public GameObject attackSprites, defenceSprites;
 
     public void UpdateDisplay() {
         title.text = card.cardName;
@@ -54,6 +55,8 @@ public class CardDisplay : MonoBehaviour
         else {
             cardType.text = card.cardType.ToString();
         }
+
+        if(card.cardType != Card.CardType.Power) cardType.text += " " + card.category.ToString();
 
         cardText.text = card.GenerateCardText();
         if (card.art != null) {
@@ -110,6 +113,31 @@ public class CardDisplay : MonoBehaviour
                 border.color = baseBackground;
             }
         }
-        
+        attackSprites.SetActive(false);
+        defenceSprites.SetActive(false);
+
+        switch (card.category)
+        {
+            case Card.CardCategory.Attack:
+                attackSprites.SetActive(true);
+                foreach (Image i in attackSprites.GetComponentsInChildren<Image>()) {
+                    i.color = border.color;
+                }
+                break;
+            case Card.CardCategory.Defence:
+                defenceSprites.SetActive(true);
+                foreach (Image i in defenceSprites.GetComponentsInChildren<Image>())
+                {
+                    i.color = border.color;
+                }
+                break;
+            case Card.CardCategory.Maneuver:
+                break;
+            case Card.CardCategory.Power:
+                break;
+            case Card.CardCategory.Burden:
+                break;
+        }
+
     }
 }

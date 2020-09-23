@@ -18,9 +18,13 @@ MonoBehaviour:
   cardName: Give
   cardText: 
   art: {fileID: 21300000, guid: b26f9fb890549d04a88cb4e664815208, type: 3}
-  attributes: []
+  attributes:
+  - attribute: 1
+    value: 0
   keywords:
-  - keyword: 22
+  - keyword: 23
     value: 1
+    parameters: 
   powers: 
   discardType: 0
+  category: 2

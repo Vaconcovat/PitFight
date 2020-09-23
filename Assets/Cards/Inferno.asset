@@ -10,18 +10,16 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 4d5d9e97f3cd26d478b113588e32d89b, type: 3}
-  m_Name: FireDude-Absorb
+  m_Name: Inferno
   m_EditorClassIdentifier: 
-  cardType: 0
+  cardType: 3
   slowDelay: 0
-  energyCost: 2
-  cardName: Protect
-  cardText: 
-  art: {fileID: 21300000, guid: 66fb0e90428afb44ab33446c4fd29b8c, type: 3}
+  energyCost: 3
+  cardName: Inferno
+  cardText: whenever you create a fire card, you may pay 2 to give it "Clone 1"
+  art: {fileID: 21300000, guid: 49468632747423544bd82f43d5e09a8e, type: 3}
   attributes: []
-  keywords:
-  - keyword: 1
-    value: 4
-    parameters: 
-  powers: 
+  keywords: []
+  powers: 02000000
   discardType: 0
+  category: 3

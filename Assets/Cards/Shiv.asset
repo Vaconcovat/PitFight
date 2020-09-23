@@ -27,3 +27,4 @@ MonoBehaviour:
     parameters: 
   powers: 
   discardType: 0
+  category: 0

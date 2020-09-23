@@ -22,4 +22,6 @@ public class CardData : ScriptableObject
     public List<Card.CardPower> powers;
     
     public Card.DiscardType discardType = Card.DiscardType.Discard;
+
+    public Card.CardCategory category = Card.CardCategory.Defence;
 }

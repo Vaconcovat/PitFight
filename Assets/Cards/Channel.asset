@@ -22,4 +22,7 @@ MonoBehaviour:
   keywords:
   - keyword: 19
     value: 2
+    parameters: 
+  powers: 
   discardType: 0
+  category: 2

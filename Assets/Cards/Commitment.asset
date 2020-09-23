@@ -35,3 +35,4 @@ MonoBehaviour:
     parameters: Fading 0
   powers: 
   discardType: 1
+  category: 2

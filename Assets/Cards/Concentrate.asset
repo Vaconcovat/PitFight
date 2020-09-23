@@ -20,7 +20,9 @@ MonoBehaviour:
   art: {fileID: 21300000, guid: 9702bdc16d9556446b1a55bce4f731d5, type: 3}
   attributes: []
   keywords:
-  - keyword: 23
+  - keyword: 24
     value: 1
+    parameters: 
   powers: 
   discardType: 0
+  category: 2

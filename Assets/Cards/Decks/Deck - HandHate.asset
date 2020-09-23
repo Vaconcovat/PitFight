@@ -1,0 +1,36 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 1c042a8262ceeed4ea44198965e9a66c, type: 3}
+  m_Name: Deck - HandHate
+  m_EditorClassIdentifier: 
+  deckName: Hate
+  cards:
+  - {fileID: 11400000, guid: d1738bd0ab2cacd4eb9bd56be8047072, type: 2}
+  - {fileID: 11400000, guid: d1738bd0ab2cacd4eb9bd56be8047072, type: 2}
+  - {fileID: 11400000, guid: d1738bd0ab2cacd4eb9bd56be8047072, type: 2}
+  - {fileID: 11400000, guid: 82dbe1aceb701074eab28b22a5a616dd, type: 2}
+  - {fileID: 11400000, guid: 82dbe1aceb701074eab28b22a5a616dd, type: 2}
+  - {fileID: 11400000, guid: 4d68cfb6ac111c845a0cc2aa6ace4792, type: 2}
+  - {fileID: 11400000, guid: 4d68cfb6ac111c845a0cc2aa6ace4792, type: 2}
+  - {fileID: 11400000, guid: 18c3686a5854e8642b0cc8d5431e415a, type: 2}
+  - {fileID: 11400000, guid: 18c3686a5854e8642b0cc8d5431e415a, type: 2}
+  - {fileID: 11400000, guid: 6b72143e5754894469813c54135247f2, type: 2}
+  - {fileID: 11400000, guid: 6b72143e5754894469813c54135247f2, type: 2}
+  - {fileID: 11400000, guid: 57931e0e5f8f5bf418dfe9c029388bb8, type: 2}
+  - {fileID: 11400000, guid: 57931e0e5f8f5bf418dfe9c029388bb8, type: 2}
+  - {fileID: 11400000, guid: 52697b397adba914099d108644076887, type: 2}
+  - {fileID: 11400000, guid: 52697b397adba914099d108644076887, type: 2}
+  - {fileID: 11400000, guid: 52697b397adba914099d108644076887, type: 2}
+  - {fileID: 11400000, guid: 652357c22de5728439c6d53a0aed1453, type: 2}
+  - {fileID: 11400000, guid: 652357c22de5728439c6d53a0aed1453, type: 2}
+  - {fileID: 11400000, guid: 6adebd08f14d2c945a61b45c40842f0a, type: 2}
+  - {fileID: 11400000, guid: 6adebd08f14d2c945a61b45c40842f0a, type: 2}
