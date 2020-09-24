@@ -142,8 +142,9 @@ public class UI_Deckbuilder : MonoBehaviour
             bool textMatch = card.GenerateCardText().ToLower().Contains(filter.ToLower());
             bool energyMatch = card.energyCost.ToString().ToLower().Contains(filter.ToLower());
             bool typeMatch = card.cardType.ToString().ToLower().Contains(filter.ToLower());
+            bool categoryMatch = card.category.ToString().ToLower().Contains(filter.ToLower());
 
-            t.gameObject.SetActive(nameMatch || textMatch || energyMatch || typeMatch || filter == "");
+            t.gameObject.SetActive(nameMatch || textMatch || energyMatch || typeMatch || categoryMatch || filter == "");
         }
     }
 }
