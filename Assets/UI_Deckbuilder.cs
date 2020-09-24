@@ -2,7 +2,8 @@
 using System.Collections.Generic;
 using UnityEngine;
 using TMPro;
-
+using System.Linq;
+using UnityEngine.UI;
 
 
 public class UI_Deckbuilder : MonoBehaviour
@@ -23,7 +24,7 @@ public class UI_Deckbuilder : MonoBehaviour
 
     public TextMeshProUGUI deckVerifyText;
 
-    
+    public Toggle orderName, orderCost, orderType, orderCategory;
 
     // Start is called before the first frame update
     void Start()
@@ -65,20 +66,45 @@ public class UI_Deckbuilder : MonoBehaviour
         HideCursor();
     }
 
-    void PopulateAllCards() {
-        
-        foreach (CardData data in allCardsDeck.cards) {
-            CardDisplay spawned = Instantiate(cardViewerPrefab, cardViewer).GetComponent<CardDisplay>();
-            Card card = new Card(data);
-            //card.InitFromData(data);
-            spawned.card = card;
-            spawned.UpdateDisplay();
+    public void PopulateAllCards() {
+
+        foreach (Transform t in cardViewer) {
+            Destroy(t.gameObject);
         }
+
+        List<CardData> cardOrder = new List<CardData>();
+        if (orderName.isOn)
+        {
+            cardOrder = new List<CardData>(allCardsDeck.cards.OrderBy(x => x.name).ThenBy(x => x.cardType));
+        }
+        else if (orderType.isOn)
+        {
+            cardOrder = new List<CardData>(allCardsDeck.cards.OrderBy(x => x.cardType));
+
+        }
+        else if (orderCost.isOn)
+        {
+            cardOrder = new List<CardData>(allCardsDeck.cards.OrderBy(x => x.energyCost).ThenBy(x => x.cardType));
+
+        }
+        else if (orderCategory.isOn) {
+            cardOrder = new List<CardData>(allCardsDeck.cards.OrderBy(x => x.category).ThenBy(x => x.cardType));
+
+        }
+
+        foreach (CardData data in cardOrder) {
+                CardDisplay spawned = Instantiate(cardViewerPrefab, cardViewer).GetComponent<CardDisplay>();
+                Card card = new Card(data);
+                //card.InitFromData(data);
+                spawned.card = card;
+                spawned.gameObject.SetActive(true);
+                spawned.UpdateDisplay();
+            }
 
         cardViewerPrefab.SetActive(false);
     }
 
-    void PopulateDeckList() {
+    public void PopulateDeckList() {
         foreach (Transform t in deckViewer) {
             Destroy(t.gameObject);
         }

@@ -1153,7 +1153,7 @@ MonoBehaviour:
     deckName: Cool Deck
     cards: 
   useDecks: 1
-  skipPreDiscovery: 1
+  skipPreDiscovery: 0
   skipMulligan: 0
   activePlayer: {fileID: 0}
   cardPrefab: {fileID: 3849026141854789739, guid: b1b00d035b0476e4080a82e5610fabfa,

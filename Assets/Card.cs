@@ -850,6 +850,22 @@ public class Card : MonoBehaviour
                 return "Give " + kw.value + " cards from your hand to your opponent.";
             case CardKeyword.Keyword.Concentrate:
                 return "Burn " + kw.value + " cards from your hand, gain energy equal to it's cost.";
+            case CardKeyword.Keyword.IgniteSelf:
+                return "Ignite yourself " + kw.value;
+            case CardKeyword.Keyword.AddKeyword:
+                return "Give " + kw.value + " cards in your hand " + kw.parameters;
+            case CardKeyword.Keyword.AddAttribute:
+                return "Give " + kw.value + " cards in your hand " + kw.parameters;
+            case CardKeyword.Keyword.OpponentDiscard:
+                return "Opponent Discard " + kw.value;  
+            case CardKeyword.Keyword.OpponentStrength:
+                return "Opponent Strength " + kw.value;
+            case CardKeyword.Keyword.OpponentAgility:
+                return "Opponent Agility " + kw.value;
+            case CardKeyword.Keyword.OpponentStamina:
+                return "Opponent Stamina " + kw.value;
+            case CardKeyword.Keyword.OpponentIntelligence:
+                return "Opponent Intelligence " + kw.value;
             default:
                 Debug.LogWarning("Keyword " + kw.keyword + " " + kw.value + " has no card text defined");
                 return "";
@@ -913,8 +929,22 @@ public class Card : MonoBehaviour
                 break;
             case CardKeyword.Keyword.Concentrate:
                 break;
+            case CardKeyword.Keyword.AddKeyword:
+                break;
+            case CardKeyword.Keyword.AddAttribute:
+                break;
+            case CardKeyword.Keyword.OpponentDiscard:
+                break;
+            case CardKeyword.Keyword.OpponentStrength:
+                break;
+            case CardKeyword.Keyword.OpponentAgility:
+                break;
+            case CardKeyword.Keyword.OpponentStamina:
+                break;
+            case CardKeyword.Keyword.OpponentIntelligence:
+                break;
             default:
-                return "This keyword has no description";
+                return "";
         }
         return "";
     }
