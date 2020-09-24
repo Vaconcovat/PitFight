@@ -1,0 +1,163 @@
+{
+  "From": "0.1.3",
+  "To": "0.1.4",
+  "Hash": "olFW+/GhwOfGSBIWW1KyWCyB20o",
+  "Entries": [
+    {
+      "Operation": 2,
+      "RelativePath": "PitFight_Data/globalgamemanagers",
+      "Attributes": 32,
+      "LastWriting": "2020-09-24T04:54:48.1920079Z"
+    },
+    {
+      "Operation": 2,
+      "RelativePath": "PitFight_Data/level0",
+      "Attributes": 32,
+      "LastWriting": "2020-09-24T04:54:45.3754014Z"
+    },
+    {
+      "Operation": 2,
+      "RelativePath": "PitFight_Data/level1",
+      "Attributes": 32,
+      "LastWriting": "2020-09-24T04:54:45.803482Z"
+    },
+    {
+      "Operation": 2,
+      "RelativePath": "PitFight_Data/level2",
+      "Attributes": 32,
+      "LastWriting": "2020-09-24T04:54:46.3935951Z"
+    },
+    {
+      "Operation": 2,
+      "RelativePath": "PitFight_Data/resources.assets",
+      "Attributes": 32,
+      "LastWriting": "2020-09-24T04:54:48.4762653Z"
+    },
+    {
+      "Operation": 2,
+      "RelativePath": "PitFight_Data/sharedassets0.assets",
+      "Attributes": 32,
+      "LastWriting": "2020-09-24T04:54:48.5251351Z"
+    },
+    {
+      "Operation": 2,
+      "RelativePath": "PitFight_Data/sharedassets0.assets.resS",
+      "Attributes": 32,
+      "LastWriting": "2020-09-24T04:54:48.5211457Z"
+    },
+    {
+      "Operation": 2,
+      "RelativePath": "PitFight_Data/sharedassets1.assets",
+      "Attributes": 32,
+      "LastWriting": "2020-09-24T04:54:48.5390985Z"
+    },
+    {
+      "Operation": 2,
+      "RelativePath": "PitFight_Data/sharedassets1.assets.resS",
+      "Attributes": 32,
+      "LastWriting": "2020-09-24T04:54:48.5341118Z"
+    },
+    {
+      "Operation": 2,
+      "RelativePath": "PitFight_Data/sharedassets2.assets",
+      "Attributes": 32,
+      "LastWriting": "2020-09-24T04:54:48.5700148Z"
+    },
+    {
+      "Operation": 2,
+      "RelativePath": "PitFight_Data/sharedassets2.assets.resS",
+      "Attributes": 32,
+      "LastWriting": "2020-09-24T04:54:48.5620356Z"
+    },
+    {
+      "Operation": 2,
+      "RelativePath": "PitFight_Data/Managed/Assembly-CSharp.dll",
+      "Attributes": 32,
+      "LastWriting": "2020-09-24T04:54:43.2807764Z"
+    },
+    {
+      "Operation": 2,
+      "RelativePath": "PitFight_Data/Managed/Sirenix.OdinInspector.CompatibilityLayer.dll",
+      "Attributes": 32,
+      "LastWriting": "2020-09-24T04:54:42.8012515Z"
+    },
+    {
+      "Operation": 2,
+      "RelativePath": "PitFight_Data/Managed/Unity.ProBuilder.dll",
+      "Attributes": 32,
+      "LastWriting": "2020-09-24T04:54:42.7673416Z"
+    },
+    {
+      "Operation": 2,
+      "RelativePath": "PitFight_Data/Managed/Unity.ProBuilder.KdTree.dll",
+      "Attributes": 32,
+      "LastWriting": "2020-09-24T04:54:41.5948835Z"
+    },
+    {
+      "Operation": 2,
+      "RelativePath": "PitFight_Data/Managed/Unity.ProBuilder.Poly2Tri.dll",
+      "Attributes": 32,
+      "LastWriting": "2020-09-24T04:54:41.4522656Z"
+    },
+    {
+      "Operation": 2,
+      "RelativePath": "PitFight_Data/Managed/Unity.ProBuilder.Stl.dll",
+      "Attributes": 32,
+      "LastWriting": "2020-09-24T04:54:42.1579522Z"
+    },
+    {
+      "Operation": 2,
+      "RelativePath": "PitFight_Data/Managed/Unity.ProGrids.dll",
+      "Attributes": 32,
+      "LastWriting": "2020-09-24T04:54:42.9568345Z"
+    },
+    {
+      "Operation": 2,
+      "RelativePath": "PitFight_Data/Managed/Unity.Recorder.dll",
+      "Attributes": 32,
+      "LastWriting": "2020-09-24T04:54:42.1439898Z"
+    },
+    {
+      "Operation": 2,
+      "RelativePath": "PitFight_Data/Managed/Unity.TextMeshPro.dll",
+      "Attributes": 32,
+      "LastWriting": "2020-09-24T04:54:41.7584866Z"
+    },
+    {
+      "Operation": 2,
+      "RelativePath": "PitFight_Data/Managed/Unity.Timeline.dll",
+      "Attributes": 32,
+      "LastWriting": "2020-09-24T04:54:41.4412684Z"
+    },
+    {
+      "Operation": 2,
+      "RelativePath": "PitFight_Data/Managed/UnityEngine.UI.dll",
+      "Attributes": 32,
+      "LastWriting": "2020-09-24T04:54:40.7301042Z"
+    },
+    {
+      "Operation": 2,
+      "RelativePath": "version.data",
+      "Attributes": 32,
+      "LastWriting": "2020-09-24T04:55:07.3572235Z"
+    },
+    {
+      "Operation": 1,
+      "RelativePath": "PitFight_Data/level3",
+      "Attributes": 0,
+      "LastWriting": "0001-01-01T00:00:00"
+    },
+    {
+      "Operation": 1,
+      "RelativePath": "PitFight_Data/sharedassets3.assets",
+      "Attributes": 0,
+      "LastWriting": "0001-01-01T00:00:00"
+    },
+    {
+      "Operation": 1,
+      "RelativePath": "PitFight_Data/sharedassets3.assets.resS",
+      "Attributes": 0,
+      "LastWriting": "0001-01-01T00:00:00"
+    }
+  ]
+}

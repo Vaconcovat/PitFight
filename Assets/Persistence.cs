@@ -27,7 +27,7 @@ public class Persistence : MonoBehaviour
             Destroy(this);
         }
 
-        
+        UpdateVersionString();
     }
 
     public void UpdateVersionString() {
