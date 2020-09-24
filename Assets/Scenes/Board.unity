@@ -1164,6 +1164,12 @@ MonoBehaviour:
   playPile: {fileID: 1745967463}
   gameSpeed: 1
   AISpeedMultiplier: 1.5
+  attackEffect_unblocked: {fileID: 288732549412610016, guid: 8f1de7273bc7e4e4c9810e07d3f94be6,
+    type: 3}
+  attackEffect_blocked: {fileID: 5930862250680408624, guid: cc1bd8e8bdf823841879ae62c9ddb1b6,
+    type: 3}
+  attackEffect_blockBreak: {fileID: 5949013420619270126, guid: d93d534b1c2da8f499403d961d1fedde,
+    type: 3}
   startingCards: []
   playerFirst: 0
 --- !u!4 &184547847
@@ -12642,7 +12648,7 @@ MeshCollider:
   m_IsTrigger: 0
   m_Enabled: 1
   serializedVersion: 4
-  m_Convex: 0
+  m_Convex: 1
   m_CookingOptions: 30
   m_Mesh: {fileID: 2143003755}
 --- !u!114 &1776547437
@@ -15251,7 +15257,7 @@ Mesh:
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_Name: pb_Mesh15370
+  m_Name: pb_Mesh18376
   serializedVersion: 10
   m_SubMeshes:
   - serializedVersion: 2
@@ -15485,6 +15491,11 @@ PrefabInstance:
         type: 3}
       propertyPath: startingHealthOverride
       value: 30
+      objectReference: {fileID: 0}
+    - target: {fileID: 7836263721604196965, guid: e2cedb541acd20c47b1f30cf418ca6d2,
+        type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 0
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: e2cedb541acd20c47b1f30cf418ca6d2, type: 3}

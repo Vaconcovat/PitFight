@@ -214,9 +214,9 @@ public class UIManager : MonoBehaviour
         instance.TextPopup(text, color, point, size, direction, variance);
     }
 
-    public static void Popup(string text, Vector3 worldPoint, Color? color = null, float size = 0, float direction = 30f, float variance = 0f)
+    public static void Popup(string text, Vector3 worldPoint, Color? color = null, float size = 0, float direction = 30f, float variance = 0f, float fadeSpeed = 0.5f)
     {
-        instance.TextPopup(text, worldPoint, color, size, direction, variance);
+        instance.TextPopup(text, worldPoint, color, size, direction, variance, fadeSpeed);
     }
 
     public void TextPopup(string text, Color? color = null, Transform point = null, float size = 0, float direction = 30f, float variance = 0f) {
@@ -232,6 +232,7 @@ public class UIManager : MonoBehaviour
             direction,
             0
             );
+        spawned.fadeSpeed = 1f;
 
         if (size > 0) {
             spawned._text.enableAutoSizing = false;
@@ -241,7 +242,7 @@ public class UIManager : MonoBehaviour
         spawned.Init();
     }
 
-    public void TextPopup(string text, Vector3 worldPoint, Color? color = null, float size = 0, float direction = 30f, float variance = 0f)
+    public void TextPopup(string text, Vector3 worldPoint, Color? color = null, float size = 0, float direction = 30f, float variance = 0f, float fadeSpeed = 0.7f)
     {
         TextPopup spawned = Instantiate(textPopup, transform).GetComponent<TextPopup>();
         spawned.transform.position = Camera.main.WorldToScreenPoint(worldPoint);
@@ -253,6 +254,7 @@ public class UIManager : MonoBehaviour
             direction,
             0
             );
+        spawned.fadeSpeed = fadeSpeed;
 
         if (size > 0)
         {

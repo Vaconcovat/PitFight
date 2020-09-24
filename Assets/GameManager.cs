@@ -51,6 +51,8 @@ public class GameManager : MonoBehaviour
     public float gameSpeed = 1f;
     public float AISpeedMultiplier = 1.5f;
 
+    public GameObject attackEffect_unblocked, attackEffect_blocked, attackEffect_blockBreak;
+
     public static float GetWaitMultiplier() {
         return (instance.gameSpeed * (instance.activePlayer == instance.opponent ? instance.AISpeedMultiplier : 1));
     }

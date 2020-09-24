@@ -19,7 +19,7 @@ public class TextPopup : MonoBehaviour
 
     void Update() {
         transform.position += floatSpeed * Time.deltaTime;
-
+        floatSpeed *= 0.99f;
         _text.color = new Color(_text.color.r, _text.color.g, _text.color.b, _text.color.a - fadeSpeed * Time.deltaTime);
         if (_text.color.a <= 0.05f) {
             Destroy(this.gameObject);

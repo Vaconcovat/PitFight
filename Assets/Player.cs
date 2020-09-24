@@ -408,9 +408,46 @@ public class Player : MonoBehaviour
         Log.Write("Queue Finished...");
     }
 
-    public void Attack(int value) {
+    public IEnumerator Attack(int value) {
         //deal damage
         Log.Write(_name + " is attacking for (" + value.ToString() + " + " + strength.ToString() + " = " + (value + strength).ToString() + ")");
+        if (enemy.block == 0)
+        {
+            if (human)
+            {
+                Instantiate(GameManager.instance.attackEffect_unblocked, UIManager.instance.blockText.transform.position + (Vector3.up * 0.5f), Quaternion.identity);
+            }
+            else
+            {
+                Instantiate(GameManager.instance.attackEffect_unblocked, UIManager.instance.opponentBlock.transform.position + (Vector3.up * 0.5f), Quaternion.Euler(0, 180f, 0));
+
+            }
+        }
+        else if (enemy.block >= (value + strength))
+        {
+            if (human)
+            {
+                Instantiate(GameManager.instance.attackEffect_blocked, UIManager.instance.blockText.transform.position + (Vector3.up * 0.5f), Quaternion.identity);
+            }
+            else
+            {
+                Instantiate(GameManager.instance.attackEffect_blocked, UIManager.instance.opponentBlock.transform.position + (Vector3.up * 0.5f), Quaternion.Euler(0, 180f, 0));
+
+            }
+        }
+        else {
+            if (human)
+            {
+                Instantiate(GameManager.instance.attackEffect_blockBreak, UIManager.instance.blockText.transform.position + (Vector3.up * 0.5f), Quaternion.identity);
+            }
+            else
+            {
+                Instantiate(GameManager.instance.attackEffect_blockBreak, UIManager.instance.opponentBlock.transform.position + (Vector3.up * 0.5f), Quaternion.Euler(0, 180f, 0));
+
+            }
+        }
+
+        yield return new WaitForSeconds(0.4f);
         DealDamage(value + strength);
         UIManager.Popup("Attack " + value.ToString() + ((strength != 0) ? ("+" + strength.ToString()) : ("")));
     }
@@ -435,13 +472,13 @@ public class Player : MonoBehaviour
         {
             block -= value;
             if (human){
-                UIManager.Popup("-" + value, UIManager.instance.blockText.transform.position, Color.blue, 80f, -40f, 5f);
-                UIManager.Popup("Blocked!", UIManager.instance.blockText.transform.position, Color.yellow, 60f, 50f, 5f);
+                UIManager.Popup("-" + value, UIManager.instance.blockText.transform.position, Color.blue, 30f, -40f, 5f, 0.2f);
+                UIManager.Popup("Blocked!", UIManager.instance.blockText.transform.position, Color.yellow, 60f, 50f, 5f, 0.2f);
             }
             else
             {
-                UIManager.Popup("-" + value, UIManager.instance.opponentBlock.transform.position, Color.blue, 80f, -40f, 5f);
-                UIManager.Popup("Blocked!", UIManager.instance.opponentBlock.transform.position, Color.yellow, 60f, 50f, 5f);
+                UIManager.Popup("-" + value, UIManager.instance.opponentBlock.transform.position, Color.blue, 30f, -40f, 5f, 0.2f);
+                UIManager.Popup("Blocked!", UIManager.instance.opponentBlock.transform.position, Color.yellow, 60f, 50f, 5f, 0.2f);
 
             }
         }
@@ -449,11 +486,11 @@ public class Player : MonoBehaviour
             int damageIn = value - block;
             if (human)
             { 
-                UIManager.Popup("-" + block, UIManager.instance.blockText.transform.position, Color.blue, 100f, -40f, 5f);
+                UIManager.Popup("-" + block, UIManager.instance.blockText.transform.position, Color.blue, 30f, -40f, 5f, 0.2f);
             }
             else
             {
-                UIManager.Popup("-" + block, UIManager.instance.opponentBlock.transform.position, Color.blue, 100f, -40f, 5f);
+                UIManager.Popup("-" + block, UIManager.instance.opponentBlock.transform.position, Color.blue, 30f, -40f, 5f, 0.2f);
             }
             block = 0;
             LoseHealth(damageIn);
@@ -472,22 +509,22 @@ public class Player : MonoBehaviour
         health -= value;
         Log.Write(_name + " has lost " + value + " health. (" + previousHealth + " -> " + health + " )");
         if (human){
-            UIManager.Popup("-" + value, UIManager.instance.healthText.transform.position, Color.red, 100f, -60f, 5f);
+            UIManager.Popup("-" + value, UIManager.instance.healthText.transform.position, Color.red, 70f, -60f, 5f, 0.15f);
         }
         else
         {
-            UIManager.Popup("-" + value, UIManager.instance.opponentHealth.transform.position, Color.red, 100f, -60f, 5f);
+            UIManager.Popup("-" + value, UIManager.instance.opponentHealth.transform.position, Color.red, 70f, -60f, 5f, 0.15f);
         }
         UIManager.UpdateUI();
 
         if (health <= 0) {
             if (human)
             {
-                UIManager.Popup("Defeat", Color.red, UIManager.instance.centrePoint, 200f, 0f);
+                UIManager.Popup("Defeat",  UIManager.instance.centrePoint.position, Color.red, 200f, 0f, 0f, 0.01f);
                 GameManager.instance.EndGame();
             }
             else {
-                UIManager.Popup("Victory", Color.green, UIManager.instance.centrePoint, 200f, 0f);
+                UIManager.Popup("Victory",  UIManager.instance.centrePoint.position, Color.green, 200f, 0f, 0f, 0.01f);
                 GameManager.instance.EndGame();
 
             }

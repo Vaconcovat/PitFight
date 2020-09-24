@@ -943,7 +943,7 @@ public class Card : MonoBehaviour
         switch (kw.keyword)
         {
             case CardKeyword.Keyword.Attack:
-                owner.Attack(kw.value);
+                owner.StartCoroutine(owner.Attack(kw.value));
                 break;
             case CardKeyword.Keyword.Block:
                 owner.Block(kw.value);
