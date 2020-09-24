@@ -570,10 +570,10 @@ public class GameManager : MonoBehaviour
     {
         currentPhase = GamePhase.Discover;
         Log.Write("Discover Phase...");
-        UIManager.Popup("Discover", Color.black, UIManager.instance.centrePoint, 100f, 0f);
 
         if (activePlayer == player) {
             activePlayer.HideHand(true);
+            UIManager.Popup("Discover", Color.black, UIManager.instance.centrePoint, 100f, 0f);
 
         }
         yield return GameManager.instance.shortWait;

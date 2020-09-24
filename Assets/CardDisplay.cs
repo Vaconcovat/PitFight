@@ -21,7 +21,7 @@ public class CardDisplay : MonoBehaviour
     public TextMeshProUGUI cardDelay;
     public Image cardArt;
 
-    public GameObject attackSprites, defenceSprites;
+    public GameObject attackSprites, defenceSprites, attackspritesBottom, defenceSpritesBottom;
 
     public void UpdateDisplay() {
         title.text = card.cardName;
@@ -115,18 +115,19 @@ public class CardDisplay : MonoBehaviour
         }
         attackSprites.SetActive(false);
         defenceSprites.SetActive(false);
-
+        attackspritesBottom.SetActive(false);
+        defenceSpritesBottom.SetActive(false);
         switch (card.category)
         {
             case Card.CardCategory.Attack:
-                attackSprites.SetActive(true);
-                foreach (Image i in attackSprites.GetComponentsInChildren<Image>()) {
+                (card.owner.human?attackSprites:attackspritesBottom).SetActive(true);
+                foreach (Image i in (card.owner.human ? attackSprites : attackspritesBottom).GetComponentsInChildren<Image>()) {
                     i.color = border.color;
                 }
                 break;
             case Card.CardCategory.Defence:
-                defenceSprites.SetActive(true);
-                foreach (Image i in defenceSprites.GetComponentsInChildren<Image>())
+                (card.owner.human ? defenceSprites : defenceSpritesBottom).SetActive(true);
+                foreach (Image i in (card.owner.human ? defenceSprites : defenceSpritesBottom).GetComponentsInChildren<Image>())
                 {
                     i.color = border.color;
                 }

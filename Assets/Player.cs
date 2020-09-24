@@ -169,7 +169,7 @@ public class Player : MonoBehaviour
             interrupts.drawAdditionalInterrupt.MoveToPile(interrupts.drawAdditionalInterrupt.owner.powers);
             
         }
-        UIManager.Popup("Draw " + numCards);
+        if(human && GameManager.instance.currentPhase != GameManager.GamePhase.Reset)UIManager.Popup("Draw " + numCards);
         for (int i = 0; i < numCards; ++i)
         {
             yield return GameManager.instance.shortWait;
@@ -473,12 +473,12 @@ public class Player : MonoBehaviour
             block -= value;
             if (human){
                 UIManager.Popup("-" + value, UIManager.instance.blockText.transform.position, Color.blue, 30f, -40f, 5f, 0.2f);
-                UIManager.Popup("Blocked!", UIManager.instance.blockText.transform.position, Color.yellow, 60f, 50f, 5f, 0.2f);
+                UIManager.Popup("Blocked!", UIManager.instance.blockText.transform.position, Color.yellow, 60f, 50f, 5f, 0.5f);
             }
             else
             {
                 UIManager.Popup("-" + value, UIManager.instance.opponentBlock.transform.position, Color.blue, 30f, -40f, 5f, 0.2f);
-                UIManager.Popup("Blocked!", UIManager.instance.opponentBlock.transform.position, Color.yellow, 60f, 50f, 5f, 0.2f);
+                UIManager.Popup("Blocked!", UIManager.instance.opponentBlock.transform.position, Color.yellow, 60f, 50f, 5f, 0.5f);
 
             }
         }

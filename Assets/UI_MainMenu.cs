@@ -63,4 +63,8 @@ public class UI_MainMenu : MonoBehaviour
         UnityEngine.SceneManagement.SceneManager.LoadScene("Deckbuilder");
 
     }
+
+    public void Quit() {
+        Application.Quit();
+    }
 }

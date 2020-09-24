@@ -152,7 +152,7 @@ public class Card : MonoBehaviour
         CardAttribute replenishAttribute = attributes.FirstOrDefault(x => x.attribute == CardAttribute.Attribute.Replenish);
         if (replenishAttribute != null) {
             Log.Write("Replenish");
-            UIManager.Popup("Replenish");
+            //UIManager.Popup("Replenish");
             owner.StartCoroutine(owner.StartDrawCoroutine(1));
             SetReveal(true);
         }

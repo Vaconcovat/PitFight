@@ -182,7 +182,7 @@ public class UIManager : MonoBehaviour
 
         energyText.text = player.energy.ToString();
         healthText.text = player.health.ToString();
-        blockText.text = player.block.ToString();
+        blockText.text = player.block > 0?player.block.ToString(): "";
         strText.text = "STR:\n" + player.strength;
         agiText.text = "AGI:\n" + player.agility;
         staText.text = "STA:\n" + player.stamina;
@@ -190,7 +190,7 @@ public class UIManager : MonoBehaviour
 
         opponentEnergy.text = opponent.energy.ToString();
         opponentHealth.text = opponent.health.ToString();
-        opponentBlock.text = opponent.block.ToString();
+        opponentBlock.text = opponent.block > 0?opponent.block.ToString():"";
         opponentStr.text = "STR:\n" + opponent.strength;
         opponentAgi.text = "AGI:\n" + opponent.agility;
         opponentSta.text = "STA:\n" + opponent.stamina;
