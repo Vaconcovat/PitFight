@@ -1,161 +1,161 @@
 {
   "Entries": [
     {
-      "Operation": 0,
+      "Operation": 4,
       "RelativePath": "PitFightLauncher.exe",
       "Attributes": 8224,
       "LastWriting": "2020-05-04T18:27:32Z",
       "Size": 640000
     },
     {
-      "Operation": 0,
+      "Operation": 4,
       "RelativePath": "UnityCrashHandler32.exe",
       "Attributes": 8224,
       "LastWriting": "2020-05-04T18:22:58Z",
       "Size": 923136
     },
     {
-      "Operation": 0,
+      "Operation": 4,
       "RelativePath": "UnityPlayer.dll",
       "Attributes": 8224,
       "LastWriting": "2020-05-04T18:29:00Z",
       "Size": 20002816
     },
     {
-      "Operation": 0,
+      "Operation": 4,
       "RelativePath": "MonoBleedingEdge/EmbedRuntime/mono-2.0-bdwgc.dll",
       "Attributes": 8224,
       "LastWriting": "2020-05-04T18:22:54Z",
       "Size": 3908096
     },
     {
-      "Operation": 0,
+      "Operation": 4,
       "RelativePath": "MonoBleedingEdge/EmbedRuntime/MonoPosixHelper.dll",
       "Attributes": 8224,
       "LastWriting": "2020-05-04T18:22:54Z",
       "Size": 612352
     },
     {
-      "Operation": 0,
+      "Operation": 4,
       "RelativePath": "MonoBleedingEdge/etc/mono/browscap.ini",
       "Attributes": 8224,
       "LastWriting": "2020-05-04T18:22:54Z",
       "Size": 311984
     },
     {
-      "Operation": 0,
+      "Operation": 4,
       "RelativePath": "MonoBleedingEdge/etc/mono/config",
       "Attributes": 8224,
       "LastWriting": "2020-05-04T18:22:54Z",
       "Size": 3276
     },
     {
-      "Operation": 0,
+      "Operation": 4,
       "RelativePath": "MonoBleedingEdge/etc/mono/2.0/DefaultWsdlHelpGenerator.aspx",
       "Attributes": 8224,
       "LastWriting": "2020-05-04T18:22:54Z",
       "Size": 60575
     },
     {
-      "Operation": 0,
+      "Operation": 4,
       "RelativePath": "MonoBleedingEdge/etc/mono/2.0/machine.config",
       "Attributes": 8224,
       "LastWriting": "2020-05-04T18:22:54Z",
       "Size": 29116
     },
     {
-      "Operation": 0,
+      "Operation": 4,
       "RelativePath": "MonoBleedingEdge/etc/mono/2.0/settings.map",
       "Attributes": 8224,
       "LastWriting": "2020-05-04T18:22:54Z",
       "Size": 2622
     },
     {
-      "Operation": 0,
+      "Operation": 4,
       "RelativePath": "MonoBleedingEdge/etc/mono/2.0/web.config",
       "Attributes": 8224,
       "LastWriting": "2020-05-04T18:22:54Z",
       "Size": 11686
     },
     {
-      "Operation": 0,
+      "Operation": 4,
       "RelativePath": "MonoBleedingEdge/etc/mono/2.0/Browsers/Compat.browser",
       "Attributes": 8224,
       "LastWriting": "2020-05-04T18:22:54Z",
       "Size": 1605
     },
     {
-      "Operation": 0,
+      "Operation": 4,
       "RelativePath": "MonoBleedingEdge/etc/mono/4.0/DefaultWsdlHelpGenerator.aspx",
       "Attributes": 8224,
       "LastWriting": "2020-05-04T18:22:54Z",
       "Size": 60575
     },
     {
-      "Operation": 0,
+      "Operation": 4,
       "RelativePath": "MonoBleedingEdge/etc/mono/4.0/machine.config",
       "Attributes": 8224,
       "LastWriting": "2020-05-04T18:22:54Z",
       "Size": 33648
     },
     {
-      "Operation": 0,
+      "Operation": 4,
       "RelativePath": "MonoBleedingEdge/etc/mono/4.0/settings.map",
       "Attributes": 8224,
       "LastWriting": "2020-05-04T18:22:54Z",
       "Size": 2622
     },
     {
-      "Operation": 0,
+      "Operation": 4,
       "RelativePath": "MonoBleedingEdge/etc/mono/4.0/web.config",
       "Attributes": 8224,
       "LastWriting": "2020-05-04T18:22:54Z",
       "Size": 18848
     },
     {
-      "Operation": 0,
+      "Operation": 4,
       "RelativePath": "MonoBleedingEdge/etc/mono/4.0/Browsers/Compat.browser",
       "Attributes": 8224,
       "LastWriting": "2020-05-04T18:22:54Z",
       "Size": 1605
     },
     {
-      "Operation": 0,
+      "Operation": 4,
       "RelativePath": "MonoBleedingEdge/etc/mono/4.5/DefaultWsdlHelpGenerator.aspx",
       "Attributes": 8224,
       "LastWriting": "2020-05-04T18:22:54Z",
       "Size": 60575
     },
     {
-      "Operation": 0,
+      "Operation": 4,
       "RelativePath": "MonoBleedingEdge/etc/mono/4.5/machine.config",
       "Attributes": 8224,
       "LastWriting": "2020-05-04T18:22:54Z",
       "Size": 34106
     },
     {
-      "Operation": 0,
+      "Operation": 4,
       "RelativePath": "MonoBleedingEdge/etc/mono/4.5/settings.map",
       "Attributes": 8224,
       "LastWriting": "2020-05-04T18:22:54Z",
       "Size": 2622
     },
     {
-      "Operation": 0,
+      "Operation": 4,
       "RelativePath": "MonoBleedingEdge/etc/mono/4.5/web.config",
       "Attributes": 8224,
       "LastWriting": "2020-05-04T18:22:54Z",
       "Size": 18857
     },
     {
-      "Operation": 0,
+      "Operation": 4,
       "RelativePath": "MonoBleedingEdge/etc/mono/4.5/Browsers/Compat.browser",
       "Attributes": 8224,
       "LastWriting": "2020-05-04T18:22:54Z",
       "Size": 1605
     },
     {
-      "Operation": 0,
+      "Operation": 4,
       "RelativePath": "MonoBleedingEdge/etc/mono/mconfig/config.xml",
       "Attributes": 8224,
       "LastWriting": "2020-05-04T18:22:54Z",
@@ -165,70 +165,70 @@
       "Operation": 4,
       "RelativePath": "PitFightLauncher_Data/app.info",
       "Attributes": 8224,
-      "LastWriting": "2020-09-24T04:05:37.277052Z",
+      "LastWriting": "2020-09-24T04:32:47.1427657Z",
       "Size": 23
     },
     {
       "Operation": 4,
       "RelativePath": "PitFightLauncher_Data/boot.config",
       "Attributes": 8224,
-      "LastWriting": "2020-09-24T04:05:35.7012912Z",
+      "LastWriting": "2020-09-24T04:32:45.0306228Z",
       "Size": 111
     },
     {
       "Operation": 4,
       "RelativePath": "PitFightLauncher_Data/globalgamemanagers",
       "Attributes": 8224,
-      "LastWriting": "2020-09-24T04:05:35.3097434Z",
+      "LastWriting": "2020-09-24T04:32:44.6232704Z",
       "Size": 59476
     },
     {
       "Operation": 4,
       "RelativePath": "PitFightLauncher_Data/globalgamemanagers.assets",
       "Attributes": 8224,
-      "LastWriting": "2020-09-24T04:05:35.4710339Z",
+      "LastWriting": "2020-09-24T04:32:44.7738685Z",
       "Size": 86180
     },
     {
       "Operation": 4,
       "RelativePath": "PitFightLauncher_Data/level0",
       "Attributes": 8224,
-      "LastWriting": "2020-09-24T04:05:33.5385836Z",
+      "LastWriting": "2020-09-24T04:32:43.1255829Z",
       "Size": 16792
     },
     {
       "Operation": 4,
       "RelativePath": "PitFightLauncher_Data/resources.assets",
       "Attributes": 8224,
-      "LastWriting": "2020-09-24T04:05:35.5707955Z",
+      "LastWriting": "2020-09-24T04:32:44.8895585Z",
       "Size": 740376
     },
     {
       "Operation": 4,
       "RelativePath": "PitFightLauncher_Data/resources.assets.resS",
       "Attributes": 8224,
-      "LastWriting": "2020-09-24T04:05:35.566798Z",
+      "LastWriting": "2020-09-24T04:32:44.8855697Z",
       "Size": 3555488
     },
     {
       "Operation": 4,
       "RelativePath": "PitFightLauncher_Data/sharedassets0.assets",
       "Attributes": 8224,
-      "LastWriting": "2020-09-24T04:05:35.6037059Z",
+      "LastWriting": "2020-09-24T04:32:44.9239077Z",
       "Size": 38784
     },
     {
       "Operation": 4,
       "RelativePath": "PitFightLauncher_Data/sharedassets0.assets.resS",
       "Attributes": 8224,
-      "LastWriting": "2020-09-24T04:05:35.6007166Z",
+      "LastWriting": "2020-09-24T04:32:44.9209159Z",
       "Size": 13550424
     },
     {
       "Operation": 4,
       "RelativePath": "PitFightLauncher_Data/Managed/Assembly-CSharp.dll",
       "Attributes": 8224,
-      "LastWriting": "2020-09-24T04:05:32.3118467Z",
+      "LastWriting": "2020-09-24T04:32:41.7857879Z",
       "Size": 100864
     },
     {
@@ -312,7 +312,7 @@
       "Operation": 4,
       "RelativePath": "PitFightLauncher_Data/Managed/Sirenix.OdinInspector.CompatibilityLayer.dll",
       "Attributes": 8224,
-      "LastWriting": "2020-09-24T04:05:31.8589595Z",
+      "LastWriting": "2020-09-24T04:32:41.4107759Z",
       "Size": 5120
     },
     {
@@ -571,56 +571,56 @@
       "Operation": 4,
       "RelativePath": "PitFightLauncher_Data/Managed/Unity.ProBuilder.dll",
       "Attributes": 8224,
-      "LastWriting": "2020-09-24T04:05:31.8230555Z",
+      "LastWriting": "2020-09-24T04:32:41.3778646Z",
       "Size": 355840
     },
     {
       "Operation": 4,
       "RelativePath": "PitFightLauncher_Data/Managed/Unity.ProBuilder.KdTree.dll",
       "Attributes": 8224,
-      "LastWriting": "2020-09-24T04:05:31.119918Z",
+      "LastWriting": "2020-09-24T04:32:40.567974Z",
       "Size": 18432
     },
     {
       "Operation": 4,
       "RelativePath": "PitFightLauncher_Data/Managed/Unity.ProBuilder.Poly2Tri.dll",
       "Attributes": 8224,
-      "LastWriting": "2020-09-24T04:05:30.9837256Z",
+      "LastWriting": "2020-09-24T04:32:40.4258449Z",
       "Size": 34816
     },
     {
       "Operation": 4,
       "RelativePath": "PitFightLauncher_Data/Managed/Unity.ProBuilder.Stl.dll",
       "Attributes": 8224,
-      "LastWriting": "2020-09-24T04:05:31.4570342Z",
+      "LastWriting": "2020-09-24T04:32:40.9649307Z",
       "Size": 12800
     },
     {
       "Operation": 4,
       "RelativePath": "PitFightLauncher_Data/Managed/Unity.ProGrids.dll",
       "Attributes": 8224,
-      "LastWriting": "2020-09-24T04:05:31.962066Z",
+      "LastWriting": "2020-09-24T04:32:41.4761099Z",
       "Size": 4096
     },
     {
       "Operation": 4,
       "RelativePath": "PitFightLauncher_Data/Managed/Unity.Recorder.dll",
       "Attributes": 8224,
-      "LastWriting": "2020-09-24T04:05:31.7362877Z",
+      "LastWriting": "2020-09-24T04:32:41.0432316Z",
       "Size": 5632
     },
     {
       "Operation": 4,
       "RelativePath": "PitFightLauncher_Data/Managed/Unity.TextMeshPro.dll",
       "Attributes": 8224,
-      "LastWriting": "2020-09-24T04:05:31.2436048Z",
+      "LastWriting": "2020-09-24T04:32:40.6851707Z",
       "Size": 331776
     },
     {
       "Operation": 4,
       "RelativePath": "PitFightLauncher_Data/Managed/Unity.Timeline.dll",
       "Attributes": 8224,
-      "LastWriting": "2020-09-24T04:05:31.1498381Z",
+      "LastWriting": "2020-09-24T04:32:40.6038783Z",
       "Size": 108544
     },
     {
@@ -921,7 +921,7 @@
       "Operation": 4,
       "RelativePath": "PitFightLauncher_Data/Managed/UnityEngine.UI.dll",
       "Attributes": 8224,
-      "LastWriting": "2020-09-24T04:05:30.3900172Z",
+      "LastWriting": "2020-09-24T04:32:39.8618444Z",
       "Size": 224768
     },
     {
@@ -1061,918 +1061,8 @@
       "Operation": 4,
       "RelativePath": "PitFightLauncher_Data/Resources/unity_builtin_extra",
       "Attributes": 8224,
-      "LastWriting": "2020-09-24T04:05:35.6973022Z",
+      "LastWriting": "2020-09-24T04:32:45.0236409Z",
       "Size": 406436
-    },
-    {
-      "Operation": 1,
-      "RelativePath": "PitFight_Data/app.info",
-      "Attributes": 0,
-      "LastWriting": "0001-01-01T00:00:00",
-      "Size": 0
-    },
-    {
-      "Operation": 1,
-      "RelativePath": "PitFight_Data/boot.config",
-      "Attributes": 0,
-      "LastWriting": "0001-01-01T00:00:00",
-      "Size": 0
-    },
-    {
-      "Operation": 1,
-      "RelativePath": "PitFight_Data/globalgamemanagers",
-      "Attributes": 0,
-      "LastWriting": "0001-01-01T00:00:00",
-      "Size": 0
-    },
-    {
-      "Operation": 1,
-      "RelativePath": "PitFight_Data/globalgamemanagers.assets",
-      "Attributes": 0,
-      "LastWriting": "0001-01-01T00:00:00",
-      "Size": 0
-    },
-    {
-      "Operation": 1,
-      "RelativePath": "PitFight_Data/level0",
-      "Attributes": 0,
-      "LastWriting": "0001-01-01T00:00:00",
-      "Size": 0
-    },
-    {
-      "Operation": 1,
-      "RelativePath": "PitFight_Data/resources.assets",
-      "Attributes": 0,
-      "LastWriting": "0001-01-01T00:00:00",
-      "Size": 0
-    },
-    {
-      "Operation": 1,
-      "RelativePath": "PitFight_Data/resources.assets.resS",
-      "Attributes": 0,
-      "LastWriting": "0001-01-01T00:00:00",
-      "Size": 0
-    },
-    {
-      "Operation": 1,
-      "RelativePath": "PitFight_Data/sharedassets0.assets",
-      "Attributes": 0,
-      "LastWriting": "0001-01-01T00:00:00",
-      "Size": 0
-    },
-    {
-      "Operation": 1,
-      "RelativePath": "PitFight_Data/sharedassets0.assets.resS",
-      "Attributes": 0,
-      "LastWriting": "0001-01-01T00:00:00",
-      "Size": 0
-    },
-    {
-      "Operation": 1,
-      "RelativePath": "PitFight_Data/Managed/Assembly-CSharp.dll",
-      "Attributes": 0,
-      "LastWriting": "0001-01-01T00:00:00",
-      "Size": 0
-    },
-    {
-      "Operation": 1,
-      "RelativePath": "PitFight_Data/Managed/ICSharpCode.SharpZipLib.dll",
-      "Attributes": 0,
-      "LastWriting": "0001-01-01T00:00:00",
-      "Size": 0
-    },
-    {
-      "Operation": 1,
-      "RelativePath": "PitFight_Data/Managed/MHLab.Patch.Core.Admin.dll",
-      "Attributes": 0,
-      "LastWriting": "0001-01-01T00:00:00",
-      "Size": 0
-    },
-    {
-      "Operation": 1,
-      "RelativePath": "PitFight_Data/Managed/MHLab.Patch.Core.Client.dll",
-      "Attributes": 0,
-      "LastWriting": "0001-01-01T00:00:00",
-      "Size": 0
-    },
-    {
-      "Operation": 1,
-      "RelativePath": "PitFight_Data/Managed/MHLab.Patch.Core.dll",
-      "Attributes": 0,
-      "LastWriting": "0001-01-01T00:00:00",
-      "Size": 0
-    },
-    {
-      "Operation": 1,
-      "RelativePath": "PitFight_Data/Managed/Mono.Security.dll",
-      "Attributes": 0,
-      "LastWriting": "0001-01-01T00:00:00",
-      "Size": 0
-    },
-    {
-      "Operation": 1,
-      "RelativePath": "PitFight_Data/Managed/mscorlib.dll",
-      "Attributes": 0,
-      "LastWriting": "0001-01-01T00:00:00",
-      "Size": 0
-    },
-    {
-      "Operation": 1,
-      "RelativePath": "PitFight_Data/Managed/netstandard.dll",
-      "Attributes": 0,
-      "LastWriting": "0001-01-01T00:00:00",
-      "Size": 0
-    },
-    {
-      "Operation": 1,
-      "RelativePath": "PitFight_Data/Managed/Newtonsoft.Json.dll",
-      "Attributes": 0,
-      "LastWriting": "0001-01-01T00:00:00",
-      "Size": 0
-    },
-    {
-      "Operation": 1,
-      "RelativePath": "PitFight_Data/Managed/Serilog.dll",
-      "Attributes": 0,
-      "LastWriting": "0001-01-01T00:00:00",
-      "Size": 0
-    },
-    {
-      "Operation": 1,
-      "RelativePath": "PitFight_Data/Managed/Serilog.Sinks.File.dll",
-      "Attributes": 0,
-      "LastWriting": "0001-01-01T00:00:00",
-      "Size": 0
-    },
-    {
-      "Operation": 1,
-      "RelativePath": "PitFight_Data/Managed/Sirenix.OdinInspector.Attributes.dll",
-      "Attributes": 0,
-      "LastWriting": "0001-01-01T00:00:00",
-      "Size": 0
-    },
-    {
-      "Operation": 1,
-      "RelativePath": "PitFight_Data/Managed/Sirenix.OdinInspector.CompatibilityLayer.dll",
-      "Attributes": 0,
-      "LastWriting": "0001-01-01T00:00:00",
-      "Size": 0
-    },
-    {
-      "Operation": 1,
-      "RelativePath": "PitFight_Data/Managed/Sirenix.Serialization.Config.dll",
-      "Attributes": 0,
-      "LastWriting": "0001-01-01T00:00:00",
-      "Size": 0
-    },
-    {
-      "Operation": 1,
-      "RelativePath": "PitFight_Data/Managed/Sirenix.Serialization.dll",
-      "Attributes": 0,
-      "LastWriting": "0001-01-01T00:00:00",
-      "Size": 0
-    },
-    {
-      "Operation": 1,
-      "RelativePath": "PitFight_Data/Managed/Sirenix.Utilities.dll",
-      "Attributes": 0,
-      "LastWriting": "0001-01-01T00:00:00",
-      "Size": 0
-    },
-    {
-      "Operation": 1,
-      "RelativePath": "PitFight_Data/Managed/System.Collections.dll",
-      "Attributes": 0,
-      "LastWriting": "0001-01-01T00:00:00",
-      "Size": 0
-    },
-    {
-      "Operation": 1,
-      "RelativePath": "PitFight_Data/Managed/System.ComponentModel.Composition.dll",
-      "Attributes": 0,
-      "LastWriting": "0001-01-01T00:00:00",
-      "Size": 0
-    },
-    {
-      "Operation": 1,
-      "RelativePath": "PitFight_Data/Managed/System.Configuration.dll",
-      "Attributes": 0,
-      "LastWriting": "0001-01-01T00:00:00",
-      "Size": 0
-    },
-    {
-      "Operation": 1,
-      "RelativePath": "PitFight_Data/Managed/System.Core.dll",
-      "Attributes": 0,
-      "LastWriting": "0001-01-01T00:00:00",
-      "Size": 0
-    },
-    {
-      "Operation": 1,
-      "RelativePath": "PitFight_Data/Managed/System.Data.dll",
-      "Attributes": 0,
-      "LastWriting": "0001-01-01T00:00:00",
-      "Size": 0
-    },
-    {
-      "Operation": 1,
-      "RelativePath": "PitFight_Data/Managed/System.Diagnostics.StackTrace.dll",
-      "Attributes": 0,
-      "LastWriting": "0001-01-01T00:00:00",
-      "Size": 0
-    },
-    {
-      "Operation": 1,
-      "RelativePath": "PitFight_Data/Managed/System.dll",
-      "Attributes": 0,
-      "LastWriting": "0001-01-01T00:00:00",
-      "Size": 0
-    },
-    {
-      "Operation": 1,
-      "RelativePath": "PitFight_Data/Managed/System.Drawing.dll",
-      "Attributes": 0,
-      "LastWriting": "0001-01-01T00:00:00",
-      "Size": 0
-    },
-    {
-      "Operation": 1,
-      "RelativePath": "PitFight_Data/Managed/System.EnterpriseServices.dll",
-      "Attributes": 0,
-      "LastWriting": "0001-01-01T00:00:00",
-      "Size": 0
-    },
-    {
-      "Operation": 1,
-      "RelativePath": "PitFight_Data/Managed/System.Globalization.dll",
-      "Attributes": 0,
-      "LastWriting": "0001-01-01T00:00:00",
-      "Size": 0
-    },
-    {
-      "Operation": 1,
-      "RelativePath": "PitFight_Data/Managed/System.Globalization.Extensions.dll",
-      "Attributes": 0,
-      "LastWriting": "0001-01-01T00:00:00",
-      "Size": 0
-    },
-    {
-      "Operation": 1,
-      "RelativePath": "PitFight_Data/Managed/System.IO.Compression.dll",
-      "Attributes": 0,
-      "LastWriting": "0001-01-01T00:00:00",
-      "Size": 0
-    },
-    {
-      "Operation": 1,
-      "RelativePath": "PitFight_Data/Managed/System.IO.Compression.FileSystem.dll",
-      "Attributes": 0,
-      "LastWriting": "0001-01-01T00:00:00",
-      "Size": 0
-    },
-    {
-      "Operation": 1,
-      "RelativePath": "PitFight_Data/Managed/System.IO.dll",
-      "Attributes": 0,
-      "LastWriting": "0001-01-01T00:00:00",
-      "Size": 0
-    },
-    {
-      "Operation": 1,
-      "RelativePath": "PitFight_Data/Managed/System.IO.FileSystem.dll",
-      "Attributes": 0,
-      "LastWriting": "0001-01-01T00:00:00",
-      "Size": 0
-    },
-    {
-      "Operation": 1,
-      "RelativePath": "PitFight_Data/Managed/System.IO.FileSystem.Primitives.dll",
-      "Attributes": 0,
-      "LastWriting": "0001-01-01T00:00:00",
-      "Size": 0
-    },
-    {
-      "Operation": 1,
-      "RelativePath": "PitFight_Data/Managed/System.Linq.dll",
-      "Attributes": 0,
-      "LastWriting": "0001-01-01T00:00:00",
-      "Size": 0
-    },
-    {
-      "Operation": 1,
-      "RelativePath": "PitFight_Data/Managed/System.Net.Http.dll",
-      "Attributes": 0,
-      "LastWriting": "0001-01-01T00:00:00",
-      "Size": 0
-    },
-    {
-      "Operation": 1,
-      "RelativePath": "PitFight_Data/Managed/System.Numerics.dll",
-      "Attributes": 0,
-      "LastWriting": "0001-01-01T00:00:00",
-      "Size": 0
-    },
-    {
-      "Operation": 1,
-      "RelativePath": "PitFight_Data/Managed/System.Runtime.dll",
-      "Attributes": 0,
-      "LastWriting": "0001-01-01T00:00:00",
-      "Size": 0
-    },
-    {
-      "Operation": 1,
-      "RelativePath": "PitFight_Data/Managed/System.Runtime.Extensions.dll",
-      "Attributes": 0,
-      "LastWriting": "0001-01-01T00:00:00",
-      "Size": 0
-    },
-    {
-      "Operation": 1,
-      "RelativePath": "PitFight_Data/Managed/System.Runtime.Serialization.dll",
-      "Attributes": 0,
-      "LastWriting": "0001-01-01T00:00:00",
-      "Size": 0
-    },
-    {
-      "Operation": 1,
-      "RelativePath": "PitFight_Data/Managed/System.Runtime.Serialization.Xml.dll",
-      "Attributes": 0,
-      "LastWriting": "0001-01-01T00:00:00",
-      "Size": 0
-    },
-    {
-      "Operation": 1,
-      "RelativePath": "PitFight_Data/Managed/System.ServiceModel.Internals.dll",
-      "Attributes": 0,
-      "LastWriting": "0001-01-01T00:00:00",
-      "Size": 0
-    },
-    {
-      "Operation": 1,
-      "RelativePath": "PitFight_Data/Managed/System.Text.Encoding.dll",
-      "Attributes": 0,
-      "LastWriting": "0001-01-01T00:00:00",
-      "Size": 0
-    },
-    {
-      "Operation": 1,
-      "RelativePath": "PitFight_Data/Managed/System.Text.Encoding.Extensions.dll",
-      "Attributes": 0,
-      "LastWriting": "0001-01-01T00:00:00",
-      "Size": 0
-    },
-    {
-      "Operation": 1,
-      "RelativePath": "PitFight_Data/Managed/System.Text.RegularExpressions.dll",
-      "Attributes": 0,
-      "LastWriting": "0001-01-01T00:00:00",
-      "Size": 0
-    },
-    {
-      "Operation": 1,
-      "RelativePath": "PitFight_Data/Managed/System.Threading.dll",
-      "Attributes": 0,
-      "LastWriting": "0001-01-01T00:00:00",
-      "Size": 0
-    },
-    {
-      "Operation": 1,
-      "RelativePath": "PitFight_Data/Managed/System.Threading.Timer.dll",
-      "Attributes": 0,
-      "LastWriting": "0001-01-01T00:00:00",
-      "Size": 0
-    },
-    {
-      "Operation": 1,
-      "RelativePath": "PitFight_Data/Managed/System.Transactions.dll",
-      "Attributes": 0,
-      "LastWriting": "0001-01-01T00:00:00",
-      "Size": 0
-    },
-    {
-      "Operation": 1,
-      "RelativePath": "PitFight_Data/Managed/System.Xml.dll",
-      "Attributes": 0,
-      "LastWriting": "0001-01-01T00:00:00",
-      "Size": 0
-    },
-    {
-      "Operation": 1,
-      "RelativePath": "PitFight_Data/Managed/System.Xml.Linq.dll",
-      "Attributes": 0,
-      "LastWriting": "0001-01-01T00:00:00",
-      "Size": 0
-    },
-    {
-      "Operation": 1,
-      "RelativePath": "PitFight_Data/Managed/System.Xml.XPath.XDocument.dll",
-      "Attributes": 0,
-      "LastWriting": "0001-01-01T00:00:00",
-      "Size": 0
-    },
-    {
-      "Operation": 1,
-      "RelativePath": "PitFight_Data/Managed/Unity.ProBuilder.dll",
-      "Attributes": 0,
-      "LastWriting": "0001-01-01T00:00:00",
-      "Size": 0
-    },
-    {
-      "Operation": 1,
-      "RelativePath": "PitFight_Data/Managed/Unity.ProBuilder.KdTree.dll",
-      "Attributes": 0,
-      "LastWriting": "0001-01-01T00:00:00",
-      "Size": 0
-    },
-    {
-      "Operation": 1,
-      "RelativePath": "PitFight_Data/Managed/Unity.ProBuilder.Poly2Tri.dll",
-      "Attributes": 0,
-      "LastWriting": "0001-01-01T00:00:00",
-      "Size": 0
-    },
-    {
-      "Operation": 1,
-      "RelativePath": "PitFight_Data/Managed/Unity.ProBuilder.Stl.dll",
-      "Attributes": 0,
-      "LastWriting": "0001-01-01T00:00:00",
-      "Size": 0
-    },
-    {
-      "Operation": 1,
-      "RelativePath": "PitFight_Data/Managed/Unity.ProGrids.dll",
-      "Attributes": 0,
-      "LastWriting": "0001-01-01T00:00:00",
-      "Size": 0
-    },
-    {
-      "Operation": 1,
-      "RelativePath": "PitFight_Data/Managed/Unity.Recorder.dll",
-      "Attributes": 0,
-      "LastWriting": "0001-01-01T00:00:00",
-      "Size": 0
-    },
-    {
-      "Operation": 1,
-      "RelativePath": "PitFight_Data/Managed/Unity.TextMeshPro.dll",
-      "Attributes": 0,
-      "LastWriting": "0001-01-01T00:00:00",
-      "Size": 0
-    },
-    {
-      "Operation": 1,
-      "RelativePath": "PitFight_Data/Managed/Unity.Timeline.dll",
-      "Attributes": 0,
-      "LastWriting": "0001-01-01T00:00:00",
-      "Size": 0
-    },
-    {
-      "Operation": 1,
-      "RelativePath": "PitFight_Data/Managed/UnityEngine.AccessibilityModule.dll",
-      "Attributes": 0,
-      "LastWriting": "0001-01-01T00:00:00",
-      "Size": 0
-    },
-    {
-      "Operation": 1,
-      "RelativePath": "PitFight_Data/Managed/UnityEngine.AIModule.dll",
-      "Attributes": 0,
-      "LastWriting": "0001-01-01T00:00:00",
-      "Size": 0
-    },
-    {
-      "Operation": 1,
-      "RelativePath": "PitFight_Data/Managed/UnityEngine.AndroidJNIModule.dll",
-      "Attributes": 0,
-      "LastWriting": "0001-01-01T00:00:00",
-      "Size": 0
-    },
-    {
-      "Operation": 1,
-      "RelativePath": "PitFight_Data/Managed/UnityEngine.AnimationModule.dll",
-      "Attributes": 0,
-      "LastWriting": "0001-01-01T00:00:00",
-      "Size": 0
-    },
-    {
-      "Operation": 1,
-      "RelativePath": "PitFight_Data/Managed/UnityEngine.ARModule.dll",
-      "Attributes": 0,
-      "LastWriting": "0001-01-01T00:00:00",
-      "Size": 0
-    },
-    {
-      "Operation": 1,
-      "RelativePath": "PitFight_Data/Managed/UnityEngine.AssetBundleModule.dll",
-      "Attributes": 0,
-      "LastWriting": "0001-01-01T00:00:00",
-      "Size": 0
-    },
-    {
-      "Operation": 1,
-      "RelativePath": "PitFight_Data/Managed/UnityEngine.AudioModule.dll",
-      "Attributes": 0,
-      "LastWriting": "0001-01-01T00:00:00",
-      "Size": 0
-    },
-    {
-      "Operation": 1,
-      "RelativePath": "PitFight_Data/Managed/UnityEngine.ClothModule.dll",
-      "Attributes": 0,
-      "LastWriting": "0001-01-01T00:00:00",
-      "Size": 0
-    },
-    {
-      "Operation": 1,
-      "RelativePath": "PitFight_Data/Managed/UnityEngine.ClusterInputModule.dll",
-      "Attributes": 0,
-      "LastWriting": "0001-01-01T00:00:00",
-      "Size": 0
-    },
-    {
-      "Operation": 1,
-      "RelativePath": "PitFight_Data/Managed/UnityEngine.ClusterRendererModule.dll",
-      "Attributes": 0,
-      "LastWriting": "0001-01-01T00:00:00",
-      "Size": 0
-    },
-    {
-      "Operation": 1,
-      "RelativePath": "PitFight_Data/Managed/UnityEngine.CoreModule.dll",
-      "Attributes": 0,
-      "LastWriting": "0001-01-01T00:00:00",
-      "Size": 0
-    },
-    {
-      "Operation": 1,
-      "RelativePath": "PitFight_Data/Managed/UnityEngine.CrashReportingModule.dll",
-      "Attributes": 0,
-      "LastWriting": "0001-01-01T00:00:00",
-      "Size": 0
-    },
-    {
-      "Operation": 1,
-      "RelativePath": "PitFight_Data/Managed/UnityEngine.DirectorModule.dll",
-      "Attributes": 0,
-      "LastWriting": "0001-01-01T00:00:00",
-      "Size": 0
-    },
-    {
-      "Operation": 1,
-      "RelativePath": "PitFight_Data/Managed/UnityEngine.dll",
-      "Attributes": 0,
-      "LastWriting": "0001-01-01T00:00:00",
-      "Size": 0
-    },
-    {
-      "Operation": 1,
-      "RelativePath": "PitFight_Data/Managed/UnityEngine.DSPGraphModule.dll",
-      "Attributes": 0,
-      "LastWriting": "0001-01-01T00:00:00",
-      "Size": 0
-    },
-    {
-      "Operation": 1,
-      "RelativePath": "PitFight_Data/Managed/UnityEngine.GameCenterModule.dll",
-      "Attributes": 0,
-      "LastWriting": "0001-01-01T00:00:00",
-      "Size": 0
-    },
-    {
-      "Operation": 1,
-      "RelativePath": "PitFight_Data/Managed/UnityEngine.GridModule.dll",
-      "Attributes": 0,
-      "LastWriting": "0001-01-01T00:00:00",
-      "Size": 0
-    },
-    {
-      "Operation": 1,
-      "RelativePath": "PitFight_Data/Managed/UnityEngine.HotReloadModule.dll",
-      "Attributes": 0,
-      "LastWriting": "0001-01-01T00:00:00",
-      "Size": 0
-    },
-    {
-      "Operation": 1,
-      "RelativePath": "PitFight_Data/Managed/UnityEngine.ImageConversionModule.dll",
-      "Attributes": 0,
-      "LastWriting": "0001-01-01T00:00:00",
-      "Size": 0
-    },
-    {
-      "Operation": 1,
-      "RelativePath": "PitFight_Data/Managed/UnityEngine.IMGUIModule.dll",
-      "Attributes": 0,
-      "LastWriting": "0001-01-01T00:00:00",
-      "Size": 0
-    },
-    {
-      "Operation": 1,
-      "RelativePath": "PitFight_Data/Managed/UnityEngine.InputLegacyModule.dll",
-      "Attributes": 0,
-      "LastWriting": "0001-01-01T00:00:00",
-      "Size": 0
-    },
-    {
-      "Operation": 1,
-      "RelativePath": "PitFight_Data/Managed/UnityEngine.InputModule.dll",
-      "Attributes": 0,
-      "LastWriting": "0001-01-01T00:00:00",
-      "Size": 0
-    },
-    {
-      "Operation": 1,
-      "RelativePath": "PitFight_Data/Managed/UnityEngine.JSONSerializeModule.dll",
-      "Attributes": 0,
-      "LastWriting": "0001-01-01T00:00:00",
-      "Size": 0
-    },
-    {
-      "Operation": 1,
-      "RelativePath": "PitFight_Data/Managed/UnityEngine.LocalizationModule.dll",
-      "Attributes": 0,
-      "LastWriting": "0001-01-01T00:00:00",
-      "Size": 0
-    },
-    {
-      "Operation": 1,
-      "RelativePath": "PitFight_Data/Managed/UnityEngine.ParticleSystemModule.dll",
-      "Attributes": 0,
-      "LastWriting": "0001-01-01T00:00:00",
-      "Size": 0
-    },
-    {
-      "Operation": 1,
-      "RelativePath": "PitFight_Data/Managed/UnityEngine.PerformanceReportingModule.dll",
-      "Attributes": 0,
-      "LastWriting": "0001-01-01T00:00:00",
-      "Size": 0
-    },
-    {
-      "Operation": 1,
-      "RelativePath": "PitFight_Data/Managed/UnityEngine.Physics2DModule.dll",
-      "Attributes": 0,
-      "LastWriting": "0001-01-01T00:00:00",
-      "Size": 0
-    },
-    {
-      "Operation": 1,
-      "RelativePath": "PitFight_Data/Managed/UnityEngine.PhysicsModule.dll",
-      "Attributes": 0,
-      "LastWriting": "0001-01-01T00:00:00",
-      "Size": 0
-    },
-    {
-      "Operation": 1,
-      "RelativePath": "PitFight_Data/Managed/UnityEngine.ProfilerModule.dll",
-      "Attributes": 0,
-      "LastWriting": "0001-01-01T00:00:00",
-      "Size": 0
-    },
-    {
-      "Operation": 1,
-      "RelativePath": "PitFight_Data/Managed/UnityEngine.ScreenCaptureModule.dll",
-      "Attributes": 0,
-      "LastWriting": "0001-01-01T00:00:00",
-      "Size": 0
-    },
-    {
-      "Operation": 1,
-      "RelativePath": "PitFight_Data/Managed/UnityEngine.SharedInternalsModule.dll",
-      "Attributes": 0,
-      "LastWriting": "0001-01-01T00:00:00",
-      "Size": 0
-    },
-    {
-      "Operation": 1,
-      "RelativePath": "PitFight_Data/Managed/UnityEngine.SpriteMaskModule.dll",
-      "Attributes": 0,
-      "LastWriting": "0001-01-01T00:00:00",
-      "Size": 0
-    },
-    {
-      "Operation": 1,
-      "RelativePath": "PitFight_Data/Managed/UnityEngine.SpriteShapeModule.dll",
-      "Attributes": 0,
-      "LastWriting": "0001-01-01T00:00:00",
-      "Size": 0
-    },
-    {
-      "Operation": 1,
-      "RelativePath": "PitFight_Data/Managed/UnityEngine.StreamingModule.dll",
-      "Attributes": 0,
-      "LastWriting": "0001-01-01T00:00:00",
-      "Size": 0
-    },
-    {
-      "Operation": 1,
-      "RelativePath": "PitFight_Data/Managed/UnityEngine.SubstanceModule.dll",
-      "Attributes": 0,
-      "LastWriting": "0001-01-01T00:00:00",
-      "Size": 0
-    },
-    {
-      "Operation": 1,
-      "RelativePath": "PitFight_Data/Managed/UnityEngine.SubsystemsModule.dll",
-      "Attributes": 0,
-      "LastWriting": "0001-01-01T00:00:00",
-      "Size": 0
-    },
-    {
-      "Operation": 1,
-      "RelativePath": "PitFight_Data/Managed/UnityEngine.TerrainModule.dll",
-      "Attributes": 0,
-      "LastWriting": "0001-01-01T00:00:00",
-      "Size": 0
-    },
-    {
-      "Operation": 1,
-      "RelativePath": "PitFight_Data/Managed/UnityEngine.TerrainPhysicsModule.dll",
-      "Attributes": 0,
-      "LastWriting": "0001-01-01T00:00:00",
-      "Size": 0
-    },
-    {
-      "Operation": 1,
-      "RelativePath": "PitFight_Data/Managed/UnityEngine.TextCoreModule.dll",
-      "Attributes": 0,
-      "LastWriting": "0001-01-01T00:00:00",
-      "Size": 0
-    },
-    {
-      "Operation": 1,
-      "RelativePath": "PitFight_Data/Managed/UnityEngine.TextRenderingModule.dll",
-      "Attributes": 0,
-      "LastWriting": "0001-01-01T00:00:00",
-      "Size": 0
-    },
-    {
-      "Operation": 1,
-      "RelativePath": "PitFight_Data/Managed/UnityEngine.TilemapModule.dll",
-      "Attributes": 0,
-      "LastWriting": "0001-01-01T00:00:00",
-      "Size": 0
-    },
-    {
-      "Operation": 1,
-      "RelativePath": "PitFight_Data/Managed/UnityEngine.TLSModule.dll",
-      "Attributes": 0,
-      "LastWriting": "0001-01-01T00:00:00",
-      "Size": 0
-    },
-    {
-      "Operation": 1,
-      "RelativePath": "PitFight_Data/Managed/UnityEngine.UI.dll",
-      "Attributes": 0,
-      "LastWriting": "0001-01-01T00:00:00",
-      "Size": 0
-    },
-    {
-      "Operation": 1,
-      "RelativePath": "PitFight_Data/Managed/UnityEngine.UIElementsModule.dll",
-      "Attributes": 0,
-      "LastWriting": "0001-01-01T00:00:00",
-      "Size": 0
-    },
-    {
-      "Operation": 1,
-      "RelativePath": "PitFight_Data/Managed/UnityEngine.UIModule.dll",
-      "Attributes": 0,
-      "LastWriting": "0001-01-01T00:00:00",
-      "Size": 0
-    },
-    {
-      "Operation": 1,
-      "RelativePath": "PitFight_Data/Managed/UnityEngine.UmbraModule.dll",
-      "Attributes": 0,
-      "LastWriting": "0001-01-01T00:00:00",
-      "Size": 0
-    },
-    {
-      "Operation": 1,
-      "RelativePath": "PitFight_Data/Managed/UnityEngine.UNETModule.dll",
-      "Attributes": 0,
-      "LastWriting": "0001-01-01T00:00:00",
-      "Size": 0
-    },
-    {
-      "Operation": 1,
-      "RelativePath": "PitFight_Data/Managed/UnityEngine.UnityAnalyticsModule.dll",
-      "Attributes": 0,
-      "LastWriting": "0001-01-01T00:00:00",
-      "Size": 0
-    },
-    {
-      "Operation": 1,
-      "RelativePath": "PitFight_Data/Managed/UnityEngine.UnityConnectModule.dll",
-      "Attributes": 0,
-      "LastWriting": "0001-01-01T00:00:00",
-      "Size": 0
-    },
-    {
-      "Operation": 1,
-      "RelativePath": "PitFight_Data/Managed/UnityEngine.UnityTestProtocolModule.dll",
-      "Attributes": 0,
-      "LastWriting": "0001-01-01T00:00:00",
-      "Size": 0
-    },
-    {
-      "Operation": 1,
-      "RelativePath": "PitFight_Data/Managed/UnityEngine.UnityWebRequestAssetBundleModule.dll",
-      "Attributes": 0,
-      "LastWriting": "0001-01-01T00:00:00",
-      "Size": 0
-    },
-    {
-      "Operation": 1,
-      "RelativePath": "PitFight_Data/Managed/UnityEngine.UnityWebRequestAudioModule.dll",
-      "Attributes": 0,
-      "LastWriting": "0001-01-01T00:00:00",
-      "Size": 0
-    },
-    {
-      "Operation": 1,
-      "RelativePath": "PitFight_Data/Managed/UnityEngine.UnityWebRequestModule.dll",
-      "Attributes": 0,
-      "LastWriting": "0001-01-01T00:00:00",
-      "Size": 0
-    },
-    {
-      "Operation": 1,
-      "RelativePath": "PitFight_Data/Managed/UnityEngine.UnityWebRequestTextureModule.dll",
-      "Attributes": 0,
-      "LastWriting": "0001-01-01T00:00:00",
-      "Size": 0
-    },
-    {
-      "Operation": 1,
-      "RelativePath": "PitFight_Data/Managed/UnityEngine.UnityWebRequestWWWModule.dll",
-      "Attributes": 0,
-      "LastWriting": "0001-01-01T00:00:00",
-      "Size": 0
-    },
-    {
-      "Operation": 1,
-      "RelativePath": "PitFight_Data/Managed/UnityEngine.VehiclesModule.dll",
-      "Attributes": 0,
-      "LastWriting": "0001-01-01T00:00:00",
-      "Size": 0
-    },
-    {
-      "Operation": 1,
-      "RelativePath": "PitFight_Data/Managed/UnityEngine.VFXModule.dll",
-      "Attributes": 0,
-      "LastWriting": "0001-01-01T00:00:00",
-      "Size": 0
-    },
-    {
-      "Operation": 1,
-      "RelativePath": "PitFight_Data/Managed/UnityEngine.VideoModule.dll",
-      "Attributes": 0,
-      "LastWriting": "0001-01-01T00:00:00",
-      "Size": 0
-    },
-    {
-      "Operation": 1,
-      "RelativePath": "PitFight_Data/Managed/UnityEngine.VRModule.dll",
-      "Attributes": 0,
-      "LastWriting": "0001-01-01T00:00:00",
-      "Size": 0
-    },
-    {
-      "Operation": 1,
-      "RelativePath": "PitFight_Data/Managed/UnityEngine.WindModule.dll",
-      "Attributes": 0,
-      "LastWriting": "0001-01-01T00:00:00",
-      "Size": 0
-    },
-    {
-      "Operation": 1,
-      "RelativePath": "PitFight_Data/Managed/UnityEngine.XRModule.dll",
-      "Attributes": 0,
-      "LastWriting": "0001-01-01T00:00:00",
-      "Size": 0
-    },
-    {
-      "Operation": 1,
-      "RelativePath": "PitFight_Data/Resources/unity default resources",
-      "Attributes": 0,
-      "LastWriting": "0001-01-01T00:00:00",
-      "Size": 0
-    },
-    {
-      "Operation": 1,
-      "RelativePath": "PitFight_Data/Resources/unity_builtin_extra",
-      "Attributes": 0,
-      "LastWriting": "0001-01-01T00:00:00",
-      "Size": 0
-    },
-    {
-      "Operation": 1,
-      "RelativePath": "PitFight.exe",
-      "Attributes": 0,
-      "LastWriting": "0001-01-01T00:00:00",
-      "Size": 0
     }
   ]
 }

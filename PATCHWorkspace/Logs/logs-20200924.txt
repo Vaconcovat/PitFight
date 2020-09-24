@@ -1,0 +1,12 @@
+2020-09-24 14:44:26.114 +10:00 [INF] ===> [Launcher updating] process STARTED! <===
+2020-09-24 14:44:26.421 +10:00 [INF] Update context initializing...
+2020-09-24 14:44:26.422 +10:00 [INF] Update context points to https://raw.githubusercontent.com/Vaconcovat/PitFight/master/PATCHWorkspace/
+2020-09-24 14:44:26.423 +10:00 [WRN] No current version found. A full repair may be required.
+2020-09-24 14:44:26.434 +10:00 [INF] Workspace cleaned. Removed 0 files
+2020-09-24 14:44:27.767 +10:00 [WRN] No patches index found.
+2020-09-24 14:44:27.806 +10:00 [INF] Collected 644 local files.
+2020-09-24 14:44:27.827 +10:00 [INF] Retrieved definition for 0.1.2
+2020-09-24 14:44:27.828 +10:00 [INF] Found 0 applicable updates.
+2020-09-24 14:44:27.828 +10:00 [INF] Update context completed initialization.
+2020-09-24 14:44:27.830 +10:00 [INF] Launcher update started. The update contains 282 operations.
+2020-09-24 14:44:27.834 +10:00 [ERR] ===> [Launcher updating] process FAILED! <===

@@ -12,6 +12,10 @@ public class Persistence : MonoBehaviour
 {
     public static Persistence instance;
 
+    public TMPro.TextMeshProUGUI version;
+
+    public string versionString;
+
     void Awake()
     {
         if (instance == null)
@@ -22,6 +26,12 @@ public class Persistence : MonoBehaviour
         else {
             Destroy(this);
         }
+
+        
+    }
+
+    public void UpdateVersionString() {
+        version.text = versionString;
     }
 
     public DeckListString playerDeck, opponentDeck;

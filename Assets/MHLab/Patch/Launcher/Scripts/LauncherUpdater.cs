@@ -30,6 +30,8 @@ namespace MHLab.Patch.Launcher.Scripts
                     UpdateRestartNeeded();
                 }
             };
+
+            
         }
 
         protected override string UpdateProcessName => "Launcher updating";
@@ -76,6 +78,8 @@ namespace MHLab.Patch.Launcher.Scripts
             
             Data.Log(Context.LocalizedMessages.UpdateProcessCompleted);
             Context.Logger.Info($"===> [{UpdateProcessName}] process COMPLETED! <===");
+            Persistence.instance.versionString = Context.CurrentVersion.ToString();
+            Persistence.instance.UpdateVersionString();
             StartGameScene();
         }
 
