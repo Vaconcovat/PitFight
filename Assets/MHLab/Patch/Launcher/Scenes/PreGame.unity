@@ -133,7 +133,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 41e0c81bd484498eaa6f04bb77af227d, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  RemoteUrl: https://raw.githubusercontent.com/Vaconcovat/PitFight/master
+  RemoteUrl: https://raw.githubusercontent.com/Vaconcovat/PitFight/master/PATCHWorkspace/
   LauncherExecutableName: PitFightLauncher.exe
   GameExecutableName: PitFight.exe
   Dispatcher: {fileID: 1744635116}
