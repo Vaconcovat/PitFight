@@ -1390,7 +1390,7 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 0}
+      - m_Target: {fileID: 351698257}
         m_MethodName: Quit
         m_Mode: 1
         m_Arguments:
@@ -2006,8 +2006,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 494.2, y: 0}
-  m_SizeDelta: {x: 672.9203, y: 382.65588}
+  m_AnchoredPosition: {x: 415.33014, y: -85.3}
+  m_SizeDelta: {x: 830.66016, y: 553.1756}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1708554986
 MonoBehaviour:
@@ -2028,17 +2028,12 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: '0.1.6:
-
-
-    New menu :)
-
-
-    New [Quick Start] Option
-
-
-    Deckbuilder
-    has sorting options'
+  m_text: "0.1.6:\n\n-New menu :)\n-New [Quick Start] Option\n-Deckbuilder has sorting
+    options\n-New keyword: Mill x (<i>draw and burn x cards </i>)\n-New rule: At
+    the start of your turn, if there are no cards in your hand, draw pile, and discard
+    pile, you lose the game.\n-New cards:<i>\n\tDefiance\r \n\tDemoralize\r \n\tNegotiation\r
+    \n\tTrickstab\r \n\tUnnerve</i>\n-Burning Cards now have a burn effect\n-You
+    can now see pile counts for you opponent's piles"
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
   m_sharedMaterial: {fileID: 2180264, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
@@ -2066,8 +2061,8 @@ MonoBehaviour:
   m_outlineColor:
     serializedVersion: 2
     rgba: 4278190080
-  m_fontSize: 20
-  m_fontSizeBase: 20
+  m_fontSize: 25
+  m_fontSizeBase: 25
   m_fontWeight: 400
   m_enableAutoSizing: 0
   m_fontSizeMin: 18
@@ -2076,7 +2071,7 @@ MonoBehaviour:
   m_textAlignment: 257
   m_characterSpacing: 0
   m_wordSpacing: 0
-  m_lineSpacing: 0
+  m_lineSpacing: 2
   m_lineSpacingMax: 0
   m_paragraphSpacing: 0
   m_charWidthMaxAdj: 0
@@ -2107,12 +2102,12 @@ MonoBehaviour:
   m_margin: {x: 0, y: 0, z: 0, w: 0}
   m_textInfo:
     textComponent: {fileID: 1708554986}
-    characterCount: 78
+    characterCount: 414
     spriteCount: 0
-    spaceCount: 14
-    wordCount: 13
+    spaceCount: 80
+    wordCount: 71
     linkCount: 0
-    lineCount: 7
+    lineCount: 16
     pageCount: 1
     materialCount: 1
   m_isUsingLegacyAnimationComponent: 0

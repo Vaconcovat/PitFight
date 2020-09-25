@@ -23,6 +23,8 @@ public class CardDisplay : MonoBehaviour
 
     public GameObject attackSprites, defenceSprites, attackspritesBottom, defenceSpritesBottom;
 
+    public ParticleSystem burnEffect;
+
     public void UpdateDisplay() {
         title.text = card.cardName;
 

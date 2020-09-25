@@ -23,7 +23,7 @@ public class Card : MonoBehaviour
         public enum Keyword {Attack, Block, Draw, Strength, Agility, Stamina, Intelligence,
             Heal, LoseHealth, TakeDamage, Stun, StunSelf, Clone, Bounce, Scry, CleanHand,
             Delay, Remember, Discard, GainEnergy, Ignite, IgniteSelf, BouncePower, Give, Concentrate, AddKeyword, AddAttribute,
-            OpponentDiscard, OpponentStrength, OpponentAgility, OpponentStamina, OpponentIntelligence
+            OpponentDiscard, OpponentStrength, OpponentAgility, OpponentStamina, OpponentIntelligence, Mill, MillOpponent
         }
         [HorizontalGroup(LabelWidth = 60f)] public Keyword keyword;
         [HorizontalGroup(LabelWidth = 40f)] public int value;
@@ -62,7 +62,7 @@ public class Card : MonoBehaviour
         }
     }
 
-    public enum CardPower {DrawAdditional, Vampire, Inferno, DelaySlows, Napalm, Lesson, Stubborn };
+    public enum CardPower {DrawAdditional, Vampire, Inferno, DelaySlows, Napalm, Lesson, Stubborn, MillAttack };
     public List<CardPower> powers;
 
     public List<CardAttribute> attributes;
@@ -452,7 +452,8 @@ public class Card : MonoBehaviour
         switch (power)
         {
             case CardPower.DrawAdditional:
-                if(owner.interrupts.drawAdditionalInterrupt != null){
+                if (owner.interrupts.drawAdditionalInterrupt != null)
+                {
                     owner.interrupts.drawAdditionalInterrupt.MoveToPile(owner.burnPile);
                     UIManager.Popup("You already have this power in play!");
                 }
@@ -514,10 +515,20 @@ public class Card : MonoBehaviour
                 {
                     owner.GainIntelligence(-4);
                 }
-                else {
+                else
+                {
                     owner.GainIntelligence(4);
                 }
                 owner.interrupts.stubbornInterrupt = reg;
+                break;
+            case CardPower.MillAttack:
+                if (owner.interrupts.millAttackInterrupt != null)
+                {
+                    owner.interrupts.millAttackInterrupt.MoveToPile(owner.burnPile);
+                    UIManager.Popup("You already have this power in play!");
+                }
+                
+                owner.interrupts.millAttackInterrupt = reg;
                 break;
         }
     }
@@ -550,7 +561,7 @@ public class Card : MonoBehaviour
                 Discard();
                 break;
             case DiscardType.Burn:
-                Burn();
+                yield return StartCoroutine(Burn());
                 break;
             case DiscardType.Retain:
                 Retain();
@@ -567,11 +578,16 @@ public class Card : MonoBehaviour
 
     }
 
-    public void Burn() {
+    public IEnumerator Burn() {
         Log.Write(cardName + " burning");
         if (owner == GameManager.instance.player) UIManager.Popup("Burn");
-        MoveToPile(owner.burnPile);
+        display.burnEffect.Stop();
+        display.burnEffect.Play();
+        yield return GameManager.instance.shortWait;
 
+
+        MoveToPile(owner.burnPile);
+        
     }
 
     public void Retain() {
@@ -857,7 +873,7 @@ public class Card : MonoBehaviour
             case CardKeyword.Keyword.AddAttribute:
                 return "Give " + kw.value + " cards in your hand " + kw.parameters;
             case CardKeyword.Keyword.OpponentDiscard:
-                return "Opponent Discard " + kw.value;  
+                return "Opponent Discard " + kw.value;
             case CardKeyword.Keyword.OpponentStrength:
                 return "Opponent Strength " + kw.value;
             case CardKeyword.Keyword.OpponentAgility:
@@ -866,6 +882,10 @@ public class Card : MonoBehaviour
                 return "Opponent Stamina " + kw.value;
             case CardKeyword.Keyword.OpponentIntelligence:
                 return "Opponent Intelligence " + kw.value;
+            case CardKeyword.Keyword.Mill:
+                return negativeColor + "Mill " + kw.value + endColor;
+            case CardKeyword.Keyword.MillOpponent:
+                return "Opponent Mill " + kw.value;
             default:
                 Debug.LogWarning("Keyword " + kw.keyword + " " + kw.value + " has no card text defined");
                 return "";
@@ -943,6 +963,9 @@ public class Card : MonoBehaviour
                 break;
             case CardKeyword.Keyword.OpponentIntelligence:
                 break;
+            case CardKeyword.Keyword.Mill:
+            case CardKeyword.Keyword.MillOpponent:
+                return "Mill x: Draw and burn x cards.";
             default:
                 return "";
         }
@@ -1381,6 +1404,14 @@ public class Card : MonoBehaviour
                 break;
             case CardKeyword.Keyword.OpponentIntelligence:
                 owner.enemy.GainIntelligence(kw.value);
+
+                break;
+            case CardKeyword.Keyword.Mill:
+                yield return owner.StartCoroutine(owner.StartMillCoroutine(kw.value));
+
+                break;
+            case CardKeyword.Keyword.MillOpponent:
+                yield return owner.enemy.StartCoroutine(owner.enemy.StartMillCoroutine(kw.value));
 
                 break;
         }

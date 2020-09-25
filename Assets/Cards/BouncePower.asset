@@ -15,7 +15,7 @@ MonoBehaviour:
   cardType: 0
   slowDelay: 0
   energyCost: 1
-  cardName: BouncePower
+  cardName: Nullify
   cardText: 
   art: {fileID: 21300000, guid: 49468632747423544bd82f43d5e09a8e, type: 3}
   attributes: []

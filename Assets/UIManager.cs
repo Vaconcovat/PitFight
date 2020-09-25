@@ -62,6 +62,10 @@ public class UIManager : MonoBehaviour
     [BoxGroup("Board")] public TextMeshPro discardPileText;
     [BoxGroup("Board")] public TextMeshPro libraryPileText;
     [BoxGroup("Board")] public TextMeshPro burnPileText;
+    [BoxGroup("Board")] public TextMeshPro opp_drawPileText;
+    [BoxGroup("Board")] public TextMeshPro opp_discardPileText;
+    [BoxGroup("Board")] public TextMeshPro opp_libraryPileText;
+    [BoxGroup("Board")] public TextMeshPro opp_burnPileText;
 
     [BoxGroup("Opponent")] public TextMeshPro opponentHealth;
     [BoxGroup("Opponent")] public TextMeshPro opponentBlock;
@@ -272,6 +276,11 @@ public class UIManager : MonoBehaviour
         discardPileText.text = "Discard\n" + player.discardPile.cards.Count;
         libraryPileText.text = "Library\n" + player.library.cards.Count;
         burnPileText.text = "Burn\n" + player.burnPile.cards.Count;
+
+        opp_drawPileText.text = "Draw\n" + opponent.drawPile.cards.Count;
+        opp_discardPileText.text = "Discard\n" + opponent.discardPile.cards.Count;
+        opp_libraryPileText.text = "Library\n" + opponent.library.cards.Count;
+        opp_burnPileText.text = "Burn\n" + opponent.burnPile.cards.Count;
     }
 
     public void StartChoice(string choice1, string choice2, string choiceText, bool valid1 = true, bool valid2 = true) {

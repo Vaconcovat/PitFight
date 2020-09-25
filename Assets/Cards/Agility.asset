@@ -14,12 +14,15 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   cardType: 0
   slowDelay: 0
-  energyCost: 0
-  cardName: Card
+  energyCost: 4
+  cardName: Agility
   cardText: 
-  art: {fileID: 0}
+  art: {fileID: 21300000, guid: 6db190b170212f740aff8886b4ab3cec, type: 3}
   attributes: []
-  keywords: []
+  keywords:
+  - keyword: 4
+    value: 1
+    parameters: 
   powers: 
-  discardType: 0
-  category: 1
+  discardType: 1
+  category: 2

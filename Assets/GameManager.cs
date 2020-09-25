@@ -201,6 +201,18 @@ public class GameManager : MonoBehaviour
     public IEnumerator SetupCoroutine() {
         yield return instance.longWait;
 
+        if (!skipPreDiscovery) {
+            for (int i = 0; i < 3; ++i)
+            {
+                if (opponent.library.cards.Count > 0)
+                {
+                    opponent.library.cards[0].MoveToPile(opponent.drawPile);
+                }
+            }
+        }
+        opponent.drawPile.Shuffle();
+        
+
         opponent.StartDraw(opponent.intelligence);
         if (!skipPreDiscovery) {
             UIManager.Popup("Pre-Discovery", Color.black, UIManager.instance.centrePoint, 100f, 0f);
@@ -383,6 +395,7 @@ public class GameManager : MonoBehaviour
             UIManager.Popup("Opponent Turn", Color.black, UIManager.instance.centrePoint, 200f, 0f);
 
         }
+        if (activePlayer.CheckMillOut()) activePlayer.LoseHealth(activePlayer.health);
         activePlayer.ResetBlock();
         yield return activePlayer.StartCoroutine(activePlayer.PlaySuddens());
         //sudden cards

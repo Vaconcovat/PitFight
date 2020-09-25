@@ -155,6 +155,7 @@ public class Player : MonoBehaviour
         public Card napalmInterrupt;
         public Card lessonInterrupt;
         public Card stubbornInterrupt;
+        public Card millAttackInterrupt;
     }
     public Interrupts interrupts;
 
@@ -175,6 +176,40 @@ public class Player : MonoBehaviour
             yield return GameManager.instance.shortWait;
             yield return StartCoroutine(Draw_Coroutine());
         }
+    }
+
+    public IEnumerator StartMillCoroutine(int numCards) {
+        for (int i = 0; i < numCards; ++i)
+        {
+            yield return GameManager.instance.shortWait;
+            yield return StartCoroutine(Mill());
+        }
+    }
+
+    public IEnumerator Mill() {
+        if (drawPile.cards.Count == 0)
+        {
+            if (discardPile.cards.Count > 0)
+            {
+                yield return GameManager.instance.shortWait;
+                discardPile.Shuffle();
+                discardPile.Transfer(drawPile);
+                yield return GameManager.instance.medWait;
+
+            }
+            else {
+                UIManager.Popup("No cards to mill");
+                Overdraw();
+                yield break;
+            }
+
+        }
+        Card milled = drawPile.cards[drawPile.cards.Count - 1];
+        milled.MoveToPile(GameManager.instance.playPile);
+        yield return GameManager.instance.medWait;
+        UIManager.Popup("Mill");
+        yield return milled.StartCoroutine(milled.Burn());
+
     }
 
     void Draw() {
@@ -202,7 +237,7 @@ public class Player : MonoBehaviour
 
     public void Overdraw() {
         Log.Write("Overdraw.");
-        if(human) UIManager.Popup("Overdraw! (1 Damage)");
+        UIManager.Popup("Overdraw! (1 Damage)");
         TakeDamage(1);
     }
 
@@ -282,8 +317,8 @@ public class Player : MonoBehaviour
                     Log.Write(c.cardName + " is fading, burning");
                     //c.MoveToPile(GameManager.instance.playPile);
                     c.SetReveal(true);
-                    yield return GameManager.instance.medWait;
-                    c.Burn();
+                    //yield return GameManager.instance.medWait;
+                    yield return c.StartCoroutine(c.Burn());
                     yield return GameManager.instance.medWait;
 
                 }
@@ -413,6 +448,13 @@ public class Player : MonoBehaviour
         Log.Write(_name + " is attacking for (" + value.ToString() + " + " + strength.ToString() + " = " + (value + strength).ToString() + ")");
         if (enemy.block == 0)
         {
+            if (interrupts.millAttackInterrupt != null) {
+                interrupts.millAttackInterrupt.MoveToPile(GameManager.instance.playPile);
+                yield return GameManager.instance.medWait;
+                yield return enemy.StartCoroutine(enemy.StartMillCoroutine(1));
+                interrupts.millAttackInterrupt.MoveToPile(powers);
+            }
+
             if (human)
             {
                 Instantiate(GameManager.instance.attackEffect_unblocked, UIManager.instance.blockText.transform.position + (Vector3.up * 0.5f), Quaternion.identity);
@@ -844,5 +886,11 @@ public class Player : MonoBehaviour
         Log.Write("Submit card: " + result.cardName);
         selectedCard = result;
         cardSelectingPile = new List<Pile>();
+    }
+
+    public bool CheckMillOut() {
+
+        //at the start of your turn, if your hand, draw pile and discard pile have no cards, you lose
+        return (hand.cards.Count == 0 && drawPile.cards.Count == 0 && discardPile.cards.Count == 0);
     }
 }
